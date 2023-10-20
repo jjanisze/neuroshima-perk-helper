@@ -1,0 +1,482 @@
+{
+  "SKILL_KONDYCJA": {
+    "ID": "SKILL_KONDYCJA",
+    "Name": "Kondycja",
+    "Description": "Chodzi o to, czy masz płuca z żelaza, silne jak miechy, pojemne jak bak w MANie. Kiedy zacznie się robić rogąco, jedni padną, a inni dopiero zaczną się rozgrzewać. A ty? Potrafisz pracować przez kilkadziesiąt godzin non stop?",
+    "Attribute": "ATR_BUD",
+    "GroupName": "Sprawność",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_PLYWANIE": {
+    "ID": "SKILL_PLYWANIE",
+    "Name": "Pływanie",
+    "Description": "Tam, w Miami, potrafią pływać wszyscy. I powiem ci, niewielu innych. Ten kraj to zasrana pustynia, radioaktywny pył, jak sam wiesz doskonale. To powiedz mi, po diabła umieć pływać. I gdzie się tego nauczyć, skoro zbiorniki wodne dzielą się na te z wodą do picia - i tam lepiej nie nurzaj swego brudnego dupska, oraz te, przy których licznik Geigera zaczyna dziwnie popiskiwać. To jak? Potrafisz pływać?",
+    "Attribute": "ATR_BUD",
+    "GroupName": "Sprawność",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_WSPINACZKA": {
+    "ID": "SKILL_WSPINACZKA",
+    "Name": "Wspinaczka",
+    "Description": "Widzisz, to wcale nie jest śmieszne. To nie jest klub wspinaczkowy, nie łażę w przyciasnych butach, ani nie mam calego plecaka sprzętu. Ale wiedz jedno - kiedy pewien palant zlecił mi zdobycie pewnej... pewnego przedmiotu, to wcale nie musiałem rozwalać trzydziestu strażników strzegących kolejnych wejść i drzwi. Wdrapałem się na 45 piętro niezauważony. Wszystko odbyło się bez ani jednego strzału. Właśnie dlatego warto ćwiczyć.",
+    "Attribute": "ATR_BUD",
+    "GroupName": "Sprawność",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_JAZDAKONNO": {
+    "ID": "SKILL_JAZDAKONNO",
+    "Name": "Jazda konno",
+    "Description": "Mój ojciec jeździł konno, więc coś o tym wiem. Konie są wspaniałe. Szybkie, dynamiczne, silne, wierne, potrafią same trafić do domu, wiedziałeś o tym? Nie są uzależnione od ropy, nie psują się, nie trzeba zmieniać im opon. Ale wiedz jedno - o konia trzeba dbać. Musisz go kochać, bo to nie samochów, który porzucisz, gdy uznasz że chcesz nowy model.",
+    "Attribute": "ATR_BUD",
+    "GroupName": "Jeździectwo",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_POWOZENIE": {
+    "ID": "SKILL_POWOZENIE",
+    "Name": "Powożenie",
+    "Description": "Kupę lat temu, nasi przodkowie, gdy kolonizowali tę ziemię, jeździli powozami i dyliżansami. Jak wszyscy wiedzą, historia kołem się toczy i lubi się powtarzać. Dzisiejsze powozy mają lepsze zawieszenie, są trwalsze i szybsze, mimo że zwierzęta takie same jak dwieście lat temu. Cóż, technologia posunęła się nieco do przodu. Dobrze złożona furmanka jest cicha, wjedziesz nią gdzie chcesz, mało pali, a w zasadzie żre, i jak się rozpędzi, jest naprawdę całkiem szybka. No i wiesz, to pojazd ekologiczny - w dzisiejszych, ciężkich czasach to się liczy, nie sądzisz?",
+    "Attribute": "ATR_BUD",
+    "GroupName": "Jeździectwo",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_UJEZDZANIE": {
+    "ID": "SKILL_UJEZDZANIE",
+    "Name": "Ujeżdżanie",
+    "Description": "Wsiąść do samochodu, spiąć dwa kabelki i można jechać. Każdy frajer to potrafi. Ale wskoczyć na dzikie zwierzę i je okiełznać, to jest, chłopcze, wyczyn. Niewielu to potrafi, bo to naprawdę ciężka robota. Na szczęście, jest za to nagroda - jeśli to potrafisz, zarobisz na chleb. W dzisiejszych czasach dobry koń jest wiele wart.",
+    "Attribute": "ATR_BUD",
+    "GroupName": "Jeździectwo",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_BIJATYKA": {
+    "ID": "SKILL_BIJATYKA",
+    "Name": "Bijatyka",
+    "Description": "Jeżeli chcesz komuś zrobić krzywdę nie potrzebujesz finezji. Znajomość tysiąca chwytów nie jest ci potrzebna. Wystarczy doświadczenie w urządzaniu zadymy. Pięści jak kamienie i twardy łeb, grzbiet jak przęsło mostu. To właśnie kryje się pod nazwą Bijatyka. Dzięki tej Umiejętności potrafisz walczyć gołymi rękami lub za pomocą kastetów, tulipanów i innych knajpianych narzędzi mordu. Po prostu bierzesz, co masz pod ręką, i walisz z całej siły.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Walka wręcz",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_BRONRECZNA": {
+    "ID": "SKILL_BRONRECZNA",
+    "Name": "Broń ręczna",
+    "Description": "Zdradzę ci teraz sekret. Rękami możesz klepać sobie muchy na ścianie albo żuli z rodzinnego miasteczka. Kiedy staniesz oko w oko z mutantem, albo nie daj Bóg z maszyną Molocha, przyda się dzierżyć w prawej ręce jakiś konkret, dajmy na to siekierę. Gazrurka jest najpopularniejszą bronią w powojennym świecie i warto umieć obsłużyć również to narzędzie.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Walka wręcz",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_RZUCANIE": {
+    "ID": "SKILL_RZUCANIE",
+    "Name": "Rzucanie",
+    "Description": "Jak mawiał mój nauczyciel ekonomii, dobrze wyszkolony żołnierz z odległości dwunastu metrów ściąga przeciwnika strażackim toporkiem. Kupić ciężarówkę toporków, wyszkolić żołnierzy i po co nam samoloty, mówił. Tak, ten gość znał się na oszczędnościach w armii.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Walka wręcz",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_SAMOCHOD": {
+    "ID": "SKILL_SAMOCHOD",
+    "Name": "Samochód",
+    "Description": "Chłopcze, nie próbuj mi tłumaczyć, że nie masz samochodu. Może się zdarzyć, że będziesz go kiedyś miał i wtedy - uwierz mi - lepiej byś wiedział, jak się zmienia biegi i dodaje gazu. Wtedy, kiedu ruszy za tobą banda gangerów, lepiej znać kilka sztuczek i wiedzieć, jak wyciągnąć z maszyny siódme poty. Bierz tę Umiejętność, i nawet nie staraj się grymasić. No już, wpisuj ją na kartę.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Prowadzenie pojazdów",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_MOTOCYKL": {
+    "ID": "SKILL_MOTOCYKL",
+    "Name": "Motocykl",
+    "Description": "Posłuchaj, ja wiem, że motocykl jest bardziej romantyczny. Tak wiem, że ma lepsze przyspieszenie. Tak, wiem, że motocyklem dostaniesz się w miejsca, w któe samochód nigdy nie dotrze. Tak, do cholery, wiem że motocyklem można jeździć wewnątrz większych budynków. No bierz tę Umiejętność i nie truj wreszcie!",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Prowadzenie pojazdów",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_CIEZAROWKA": {
+    "ID": "SKILL_CIEZAROWKA",
+    "Name": "Ciężarówka",
+    "Description": "Niektórzy lubią szybkie samochody, inni jeszcze szybsze motocykle, ale powiem ci, nie ma to jak czas osiemnastu kółek. Duży, bezpieczny, silny. Gdy prowadzisz ciężarówkę, jesteś panem autostrady. Żaden szpaner w Chryslerze, czy innym Fordzie, ci nie podskoczy. Gangersi mogą się schować, ze swymi rozpadającymi się wehikułami. W dzisiejszych czasach ciężarówka, to jest to, czego potrzebujesz najbardziej.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Prowadzenie pojazdów",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_KRADZIEZKIESZONKOWA": {
+    "ID": "SKILL_KRADZIEZKIESZONKOWA",
+    "Name": "Kradzież kieszonkowa",
+    "Description": "Kiedy żyjesz w mieście, reguły gry różnią się znacznie od tego, co jest na pustyni. Miasto to tłum, masa cwaniaków myślących tylko o sobie, kombinujących jakby zarobić jeszcze kilka groszy. A pośród tej masy cwaniaków kręci się dziesięć razy tyle wsioków, którzy z rozdziawionymi mordami leżą po ulicach tak, jakby nigdy nie byli w mieście. \n\nI tych wsioków należy oskubać, na nic innego nie zasłużyli. Tak zarabia się na życie w Detroit, tak zarabia się w Vegas. Na turystach, mój drogi, na turystach.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Zdolności manualne",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_OTWIERANIEZAMKOW": {
+    "ID": "SKILL_OTWIERANIEZAMKOW",
+    "Name": "Otwieranie zamków",
+    "Description": "To bardzo przydatna Umiejętność. I wcale nie dlatego, że jeśli zgubisz klucze od domu, będziesz mógł się dostać do wewnątrz, o nie. Otwieranie zamków to fach, prawdziwa sztuka, coś, co być może zapewni ci pracę i pieniądze. Wystarczy, byś był w tym dobry, a możesz być pewny, że spadniesz na cztery łapy.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Zdolności manualne",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_ZWINNEDLONIE": {
+    "ID": "SKILL_ZWINNEDLONIE",
+    "Name": "Zwinne dłonie",
+    "Description": "Czy zdarzały ci się chwile, gdy do strita brakowało ci jednej karty i musiałeś przekonywać ćwoków, że wykładasz oklahomę? Jasne. Dobra rada: naucz się podczas rewizji niepostrzeżenie przerzucać nożyk z dłoni do dłoni. Naucz się odpowiednio rzucać kośćmi i kantować w trzy karty. I nie przynoś więcej wstydu Vegas. Zwinne dłonie są wykorzystywane w chwilach, gdy Bohater niepostrzeżenie chce wyciągnąć nóż i ukryć go w rękawie, lub gdy chce odpiąć kaburę, tak, by nikt nie zauważył. Także po to, by zwinąć coś ze straganu, lub by oszukiwać w kartach. Umiejętność jest natomiast zupełnie nieprzydatna przy odkręcaniu tłumika w samochodzie, czy podczas gry na fortepianie.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Zdolności manualne",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_PISTOLETY": {
+    "ID": "SKILL_PISTOLETY",
+    "Name": "Pistolety",
+    "Description": "Broń krótka to między innymi ten model Glocka, który teraz trzymam w ręku. Wielu z radością wymieniłoby go na jakiś karabin snajperski, albo śrutówkę, ale powiem ci, lubię tego Glocka. Nie zacina się. Nie zajmuje połowy bagażnika. Nie wzbudza emocji i plotek. I nadal, tak jak karabin snajperski, po celnym strzale w łeb, zabija na miejscu. I co ty na to?",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Broń strzelecka",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_KARABINY": {
+    "ID": "SKILL_KARABINY",
+    "Name": "Karabiny",
+    "Description": "Broń długa to karabiny wyborowe, śrutówki, czy karabiny samopowtarzalne - coś, co przydaje się, gdy masz zamiar stanąć naprzeciw połowy gangu, albo watahy mutantów. Pistolet, fajna rzecz, ale są sytuacje, kiedy jednak trzeba wygarnąć ostro i bez zahamowań. Wtedy bierzez w łapy coś cięższego i ładujesz. Bez tej Umiejętności będzie ci szło niesporo, niestety.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Broń strzelecka",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_BRONMASZYNOWA": {
+    "ID": "SKILL_BRONMASZYNOWA",
+    "Name": "Broń maszynowa",
+    "Description": "Ciężkie karabiny i cała rzesza innego żelastwa, które wyrzuca dużo ołowiu w bardzo krótkim czasie. Ten sprzęt daje niezłego kopa, więc lepiej żebyś był bykiem i lepiej dobrze stał na nogach, bo inaczej położysz się na ziemię, a kule polecą w niebo. Broń maszynowa to ten rodzaj broni, który służy do walki z Molochem i mutantami. Glockiem ich nie sprzątniesz. Więc lepiej opanuj obsługę cekaemu, ok?",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Broń strzelecka",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_LUK": {
+    "ID": "SKILL_LUK",
+    "Name": "Łuk",
+    "Description": "Śmiej się bracie, śmiej się. Też miałem niezły ubaw, gdy pierwszy raz zobaczyłem faceta z Vegas z łukiem. Mało się nie poszczałem z radości. A potem facet dał mi pokaz umiejętności. Wiesz, że łuk niesie do trzysty metrów? Ja też nie wiedziałem. A wiesz, że jest cichszy od najlepszego tłumika? Mnie też wtedy jakoś to nie przyszło do głowy. A wiesz, no dobra śmiej się, śmiej.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Broń dystansowa",
+    "Specialization": "SPEC_WARRIOR,SPEC_RANGER"
+  },
+  "SKILL_KUSZA": {
+    "ID": "SKILL_KUSZA",
+    "Name": "Kusza",
+    "Description": "Kusza ma to do siebie, że jest bronią z gatunku tych śmiesznych. Jeśli sięgniesz do bagażnika i wyciągniesz karabiny, zapadnie cisza. Gdy z wozu wyciągniesz kuszę, okoliczny frajerzy poszczają się ze śmiechu. Dlatego właśnie kusza to broń, z której strzelasz jak jesteś daleko od przeciwnika. Broń zasięgowa, jak mawiają.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Broń dystansowa",
+    "Specialization": "SPEC_WARRIOR,SPEC_RANGER"
+  },
+  "SKILL_PROCA": {
+    "ID": "SKILL_PROCA",
+    "Name": "Proca",
+    "Description": "Kawałek starej dętki lub skóry, worek kamieni i dobre oko wystarczą, by zamienić to w bardzo niebezpieczną broń. Proca się nie zacina, proca nie potrzebuje tłumika. Procę możesz schować w kieszeni, procy nie dostrzeże wykrywacz metalu. Ja nadal wolę mojego Glocka, ale znam kilku ludzi, którzy nie wymieniliby swojego kawałka skóry na żadną pukawkę.",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Broń dystansowa",
+    "Specialization": "SPEC_WARRIOR,SPEC_RANGER"
+  },
+  "SKILL_ZASTRASZANIE": {
+    "ID": "SKILL_ZASTRASZANIE",
+    "Name": "Zastraszanie",
+    "Description": "Jak podniesiesz głos, mają się spocić. Jak krzykniesz, mają się zesrać. I to w sumie wszystko.",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Negocjacje",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_PERSWAZJA": {
+    "ID": "SKILL_PERSWAZJA",
+    "Name": "Perswazja",
+    "Description": "Tak, to jest ta najważniejsza zdolność - walka umysłów. Albo on, albo ty. Spoglądasz facetowi prosto w oczy i robisz groźną minę. On robi to samo. Także patrzy ci prosto w oczy i robi groźną minę. Jeden z was odwróci wzrok. Nie wytrzyma. Przegra. Chcesz spróbować? Spójrz. No chodź tu, spójrz mi prosto w oczy. No już, nie bój się.",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Negocjacje",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_ZDOLNOSCIPRZYWODCZE": {
+    "ID": "SKILL_ZDOLNOSCIPRZYWODCZE",
+    "Name": "Zdolności przywódcze",
+    "Description": "Trzeba być kimś, by ludzie cię słuchali. Albo inaczej, zasadniczo nie trzeba być kimś. Po prostu trzeba na kogoś wyglądać. Ale to nie wszystko. Jak powiesz, by ruszyli za tobą, ruszą. Jeśli powiesz, by się zamknęli, zamkną się. Jeśli powiesz by... no dobra, na stacjach benzynowych to nie działa. Nie zatankujesz za friko, nawet jeśli masz dowodzenia na dwudziestce.",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Negocjacje",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_POSTRZEGANIEEMOCJI": {
+    "ID": "SKILL_POSTRZEGANIEEMOCJI",
+    "Name": "Postrzeganie emocji",
+    "Description": "No i wyobraź sobie, widzisz faceta, wielki jak Juggernaut, piana leci mu z pyska, cały aż się trzęsie, włosy zmierzwione... To proste, jest wściekły. Jeśli się podszkolisz w dostrzeganiu emocji ludzi, jeden zero dla ciebie. Wiedzieć, czy facet, który stoi naprzeciw, boi się, czy też naprawdę jest taki twardy, na jakiego wygląda. Czy się niecierpliwi, czy myśli o czymś innym, czy może jest skupiony jak jasna cholera?",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Empatia",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_BLEF": {
+    "ID": "SKILL_BLEF",
+    "Name": "Blef",
+    "Description": "Tu wcale nie chodzi o kardziuszki, o nie. Rzecz polega na zachowaniu kamiennej twarzy nawet w najbardziej stresującej sytuacji. Ba, musisz umieć się uśmiechnąć wtedy, gdy przypadkowo spotkany szef gangu, któremu w zeszłym miesiącu zwinąłeś ciężarówkę z dostawą, spojrzy na ciebie i spyta \"Czy ja cię skądś nie znam?\". Nie wypada, byś zaczął się jąkać. Uśmiechnij się, udaj, że się zastanawiasz i w końcu odpowiedz, że nie. Albo ci uwierzy, albo masz na karku kilkunastu wściekłych gangerów. Wściekłych jak jasna cholera.",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Empatia",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_OPIEKANADZWIERZETAMI": {
+    "ID": "SKILL_OPIEKANADZWIERZETAMI",
+    "Name": "Opieka nad zwierzętami",
+    "Description": "W dzisiejszych czasach dobrze jest mieć przyjaciół. A ponieważ ludziom nie można już ufać, pozostają zwierzęta. Silny wierzchowiec wykaraska cię z kłopotów sprawniej niż dziesięć Buicków. Pies obronny często będzie bardziej pomocny niż Glock. Wytresowana łasica to prawdziwy skarb. Dlatego warto opiekować się zwierzętami, dbrać o nie i pielęgnować - prędzej czy później oddadzą z nawiązką to, co im dałeś. Kiedy miałem karalucha, to dopiero opowieść. Nie uwierzysz, co taki karaluch potrafi wyczyniać po pijaku...",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Empatia",
+    "Specialization": "SPEC_ROGUE"
+  },
+  "SKILL_ODPORNOSCNABOL": {
+    "ID": "SKILL_ODPORNOSCNABOL",
+    "Name": "Odporność na ból",
+    "Description": "Tak, tego można się nauczyć. Stare powiedzenie mówi, że z akumulatorem na jajach jeszcze żaden nie kłamał. To prawda. Ale prawdą jest także to, że jeden łamie się szybko, inni potrafią wytrzymać nawet kilka godzin męczarni.",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Siła woli",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_NIEZLOMNOSC": {
+    "ID": "SKILL_NIEZLOMNOSC",
+    "Name": "Niezłomność",
+    "Description": "Można to spotkać u łowców, ci goście są nie do zdarcia, a im bliżej są celu, tym bardziej to widać. Niewiarygodne, jaką mają siłę, by przeć do przodu na przeków wszytmieku. Poobijani, wykończeni, bez prowiantu i planu działania - wciąż do przodu. Jakby im kto na korze mózgowej wyskrobał rozkaz: nie poddawaj się. Wstań i walcz.",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Siła woli",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_MORALE": {
+    "ID": "SKILL_MORALE",
+    "Name": "Morale",
+    "Description": "Zaprawa to nie tylko materiał wiążący ceglaną ścianę. Dyscyplika ciała i ducha jest przede wszystkim domeną wojskowych, ale nic nie stoi na przeszkodzie, żeby twój Spec czy Mechanik był człowiekiem, który kulom się nie kłania. Morale przydają się, żeby przełamać strach - obojętne, czy mierzysz się z kimś na spojrzenia, czy leżysz skulony w okopie. Dzięki tej Umiejętności potrafisz maszerować forsownie i bez nieporozumień wykonywać lakoniczne rozkazy przełożonych. Sprawdźmy czy zrozumiałeś: Padnij! Powstań! Baaaczność!",
+    "Attribute": "ATR_CHA",
+    "GroupName": "Siła woli",
+    "Specialization": "SPEC_WARRIOR"
+  },
+  "SKILL_PIERWSZAPOMOC": {
+    "ID": "SKILL_PIERWSZAPOMOC",
+    "Name": "Pierwsza pomoc",
+    "Description": "Ktoś, jeszcze w czasach radia i telewizji, powiedział, że najważniejsze są pierwsze cztery minuty. Pierwsza pomoc. Właśnie wtedy raduje się życie. Lepiej, byś się na tym znał. A jeszcze lepiej, by znali się na tym twoi kumple. W końcu ty też możesz dostać serią z peemu, mam rację?",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Medycyna",
+    "Specialization": "SPEC_RANGER, SPEC_TECH"
+  },
+  "SKILL_LECZENIERAN": {
+    "ID": "SKILL_LECZENIERAN",
+    "Name": "Leczenie ran",
+    "Description": "Wyobraź sobie sytuacje - duża prędkość, a potem poślizg, rów, dachowanie. I leżysz. Ręka ma ze trzy łokcie, noga dwa kolana. Pomyśl, czego ci trzeba? Gorzałki?! No dobra, gorzałki też, ale czego jeszcze? Tytoniu? Chłopie, ja nie żartuję! Tytoń nie nastawi ci kości, ani nie zszyje poharatanego dupska! Co ja wiem o tytoniu...?! Psychol jesteś i nałogowiec!",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Medycyna",
+    "Specialization": "SPEC_RANGER, SPEC_TECH"
+  },
+  "SKILL_LECZENIECHOROB": {
+    "ID": "SKILL_LECZENIECHOROB",
+    "Name": "Leczenie chorób",
+    "Description": "Wiesz co, grypą to ja też się nie przejmuję. Tak, tak, katar, czy gorączka, to małe piwo. Ale jak zaczniesz stać krwią, puszczać pawia co kwadrans i pocić się jak mysz, to możesz być pewien - już po dobie, jeśli nie masz przy sobie kumpla felczera. Chłopcy z ekipy porzucą cię od razu - nie będą ryzykowali zarażenia się. Będziesz miał szczęście, jeśli na odchodnym nie poślą ci kulki w łeb. Więc lepiej trzymaj się blisko felczera, albo chociaż sam nim zostań. Zawsze to jakieś wyjście.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Medycyna",
+    "Specialization": "SPEC_RANGER, SPEC_TECH"
+  },
+  "SKILL_MECHANIKA": {
+    "ID": "SKILL_MECHANIKA",
+    "Name": "Mechanika",
+    "Description": "Wyobraź sobie, że widzisz pełny bagażnik żelastwa, a obok stoi facet i zaklina się, że to części zapasowe do jego Forda. Aha - mówisz - i co jeszcze? Ta przekładnia Steina też? I te dwie prowadnice? No dobra, a ten układ hydrauliczny to do czego...? Facet wuezue fragmenty układu celowniczego do wyrzutni pocisków. I wiesz co? To nie jest standartowe wyposażenie Forda.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Technika",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_ELEKTRONIKA": {
+    "ID": "SKILL_ELEKTRONIKA",
+    "Name": "Elektronika",
+    "Description": "Spieprzona radiostacja, to ból. Nie działający system sprzężonych działek w bunkrze, w którym się zabarykadowałeś, też ból. Kłopoty z radarem... Właśnie dlatego lepiej byś potrafił sobie z tym radzić, szczególnie gy zaczyna być gorąco. Szczególnie wtedy.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Technika",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_KOMPUTERY": {
+    "ID": "SKILL_KOMPUTERY",
+    "Name": "Komputery",
+    "Description": "W latach osiemdziesiątych zawrotną karierę zrobiły pecety. Mieli je wszyscy. I wiesz, każdy z tych pecetów, choć taki sam, działał zupełnie inaczej. Magia. Więc jeśli myślisz, że jak raz w życiu używałeś kompa to już jesteś niezły, mylisz się srodze. Każdy komp miał inny BIOS. Każdy miał kompatybilny system kompatybilny wcale noe był. Do obsługi kompa trzeba mieć cholernie dużą cierpliwość. I dar od Boga. Inaczej nie dasz rady, wiem co mówię.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Technika",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_HISTORIA": {
+    "ID": "SKILL_HISTORIA",
+    "Name": "Historia",
+    "Description": "Nie ma się z czego śmiać! Wbrew pozorom są jeszcze na świecie goście, którzy wolą siedzieć w księgach i czytać o dawnych czasach. Co ich obchodzi Wojna Secezyjna. Po co im data rozpoczęcia drugiej światowej? Po co im informacje o Hannibalu? Nie pytaj. Siedzą i kują. Powiem ci, olej to, szkoda na to punktów...",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_GEOGRAFIA": {
+    "ID": "SKILL_GEOGRAFIA",
+    "Name": "Geografia",
+    "Description": "Wiesz, taki facet potrafi ci na jednym wdechu wymienić wszystkie państwa Afryki z czasów sprzed wojny. Gdyby jeszcze powiedział mi gdzie jest ta Afryka i po cholerę mu ta wiedza... Z drugiej jednak strony, czasem potrafi strzelić takimi infomracjami, że kopara opada. Wiesz, jedziemy przez góry Skaliste, a on coś mówi o tektonice, o płytach, ani się chłopie obejrzysz, a tu kamcur wielkości mojego tira, wali się nam na trasę. Walnąłem gościa w łeb i mówię, mu, że jak się jeszcze raz wydrze w tym rejonie, to mu całą jego wiedzę wsadzę w dupsko.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_BIOLOGIA": {
+    "ID": "SKILL_BIOLOGIA",
+    "Name": "Biologia",
+    "Description": "A czy ja się znam na biologii? Ja nawet nie wiem, co to jest! Chyba coś o motylkach. Ja na twoim miejscu bym tego nie brał. Poniżej są Umiejętności przetrwania, są o wiele lepsze!",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_OGOLNIEHUMANISTYCZNE": {
+    "ID": "SKILL_OGOLNIEHUMANISTYCZNE",
+    "Name": "Historia, Psychologia i Sztuka",
+    "Description": "Znasz historię, psychologię i sztukę.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_OGOLNIESCISLE": {
+    "ID": "SKILL_OGOLNIESCISLE",
+    "Name": "Geografia, Fizyka i Matematyka",
+    "Description": "Znasz geografię, fizykę i matematykę.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_OGOLNEBIOCHEMIA": {
+    "ID": "SKILL_OGOLNEBIOCHEMIA",
+    "Name": "Biologia, Chemia i Chirurgia",
+    "Description": "Znasz biologię, chemię i chirurgie.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_MASZYNYCIEZKIE": {
+    "ID": "SKILL_MASZYNYCIEZKIE",
+    "Name": "Maszyny ciężkie",
+    "Description": "Pewnie, że nie jest ci to zupełnie niepotrzebne. Absolutnie się zgadzam. Co prawda, pożałujesz tego kilka sekund po tym, jak los rzuci cię do dowolnej fabryki, kiedy wszystko zacznie szaleć. Wtedy, gdy prasa przejedzie się po twoim kumplu, dźwig roztrzaska łeb drugiemy, a ty zostaniesz rozjechany przez wózek widłowy, ale co tam, prawda? Przecież Moloch to tylko bajka dla dzieci, nie?",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Sprzęt",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_WOZYBOJOWE": {
+    "ID": "SKILL_WOZYBOJOWE",
+    "Name": "Wozy bojowe",
+    "Description": "Jechałem kiedyś czołgiem, wiesz. Powiem ci, niewiarygodna frajda, trzęsie, huczy, a potem dup, wjechaliśmy w skałę, teren się obsunął, ledwo wyleźliśmy z tego cholerstrwa, nim runęło w przepaść. Szkoda go, taki fajny czołg był...",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Sprzęt",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_KUTRY": {
+    "ID": "SKILL_KUTRY",
+    "Name": "Kutry",
+    "Description": "To, że dziś krajobraz w większości miejsc przypomina pustynię, nie znaczy, że nie ma rzek. Co prawda, płynie w nich szlam zamiast wody, ale dla łodzi to bez różnicy. Dzisiejsze drogi niezbyt się nadają do jeżdżenia, za to rzeki mają nadal gładką powierzchnię. Wiesz, Missisipi rozciąga się prawie na obszarze połowy dawnych USA, więc może załatw sobie kuter. Na tej Umiejętności pokierujesz i większą motorówką, i niedużym statkiem rybackim, ale już do żaglowców czy transatlantyków poszukaj sobie czegoś innego.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Sprzęt",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_RUSZNIKARSTWO": {
+    "ID": "SKILL_RUSZNIKARSTWO",
+    "Name": "Rusznikarstwo",
+    "Description": "Tak chłopie, to ci się przyda. Nie dość, że będziesz mógł naprawić broń palną, to jeszcze sam wytwarzać amunicję. Nieźle, prawda? Gdy po strzelaninie pozbierasz łuski, będziesz miał nieco prochu, kawał ołowiu, z którego można odlać pociski, rtęć piorunującą na spłonki, to przy odrobinie wprawy, będziesz w stanie sam powtórnie napełnić nabój. Nikt nie mówi, że jest to proste i łatwe, ale z taką Umiejętnością można nieźle żyć. No i po wystzeleniu ostatniej kuli nie siedzieć i biadolić, że najbliższy sklep jest dwieście mil dalej, ale siąść i rozwiązać ten problem we własnym zakresie.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Pirotechnika",
+    "Specialization": "SPEC_WARRIOR, SPEC_TECH"
+  },
+  "SKILL_WYRZUTNIE": {
+    "ID": "SKILL_WYRZUTNIE",
+    "Name": "Wyrzutnie",
+    "Description": "Nie ukrywam, że nie przepadam za ciężkim sprzętem i małymi działkami. Ale nie ukrywam też, że właśnie takie działko mam zamontowane na dachu mojej Christine, i choć rzadko z niego korzystam, nie żałuję, że potrafię się nim obsługiwać. Walczyłeś kiedyś z Goliatem? Nie wiesz co to? Może i lepiej.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Pirotechnika",
+    "Specialization": "SPEC_WARRIOR, SPEC_TECH"
+  },
+  "SKILL_MATERIALYWYBUCHOWE": {
+    "ID": "SKILL_MATERIALYWYBUCHOWE",
+    "Name": "Materiały wybuchowe",
+    "Description": "Czyli jak podłożyć i zamontować, jak rozbroić, w końcu jak do pewnego stopnia samemu spreparować z gotowych komponentów niewielką bombkę. Kto by tego nie chciał wiedzieć, co? Tylko potem, proszę, bez zbędnych ataków wandalizmu!",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Pirotechnika",
+    "Specialization": "SPEC_WARRIOR, SPEC_TECH"
+  },
+  "SKILL_WYCZUCIEKIERUNKU": {
+    "ID": "SKILL_WYCZUCIEKIERUNKU",
+    "Name": "Wyczucie kierunku",
+    "Description": "Wyczucie kierunku pozwala na wyznaczenie stron świata (na powierzchni i pod ziemią) i ogólne zorientowanie się w terenie. Dzięki tej Umiejętności możesz sprawdzić, czy nie zgubiłeś się w labiryncie. Pozwala ona również kreślić mapy. Jeżeli na niebie widać słońce, żaden problem. Gorzej, gdy nie ma światła, albo mgła czy ulewny deszcz zasłania wszystko.",
+    "Attribute": "ATR_PER",
+    "GroupName": "Orientacja w terenie",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_PRZYGOTOWANIEPULAPKI": {
+    "ID": "SKILL_PRZYGOTOWANIEPULAPKI",
+    "Name": "Przygotowanie pułapki",
+    "Description": "A to w ogóle jest ostra historia. Spieprzaliśmy przed ludźmi Szarego Proroka, wpadliśmy w środek kanionu, góry potężne, kamole wielkości stacji benzynowej na szczytach. I wiesz co zrobiliśmy? A spuściliśmy im taki jeden na głowę. Centralnie. Wyobraź sobie, jakbyś się czuł, jakby ci stacja benzynowa pieprznęła na czerep. Aha, na pewno powiem ci jak to zrobiliśmy, już spierzę... Powieum tyle: znasz słowo akustyka? Nie? Oni też nie znali...",
+    "Attribute": "ATR_PER",
+    "GroupName": "Orientacja w terenie",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_TROPIENIE": {
+    "ID": "SKILL_TROPIENIE",
+    "Name": "Tropienie",
+    "Description": "O czym tu mówić? Puszczasz dwóch gości przez pustynię. Potem czekasz tydzień i puszasz za nimi faceta, który twierdzi, że jest tropicielem. Jeśli ruszy za nimi i ich znajdzie, to znaczy że faktycznie jest tropicielem. A to znaczy, że wykupił tę właśnie Umiejętność.",
+    "Attribute": "ATR_PER",
+    "GroupName": "Orientacja w terenie",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_NASLUCHIWANIE": {
+    "ID": "SKILL_NASLUCHIWANIE",
+    "Name": "Nasłuchiwanie",
+    "Description": "Pewnie, możesz siedzieć w więzieniu i przez pięć lat nasłuchiwać, czy ukochana przyszła cię odwiedzić. Taaa, ale obaj wiemy, że nie o to chodzi. Siedzisz, pijesz piwko, wokoło zabawa, miło, przyjemnie, jakaś panienka przymila się, siada na kolana... I nagle puk, coś przewróciło się za barakiem, przy siatce. Wyciszasz się, koncentrujesz i słyszysz szuranie. To Mike, strażnik. Ktoś ciągnie go po żwirze.",
+    "Attribute": "ATR_PER",
+    "GroupName": "Spostrzegawczość",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_WYPATRYWANIE": {
+    "ID": "SKILL_WYPATRYWANIE",
+    "Name": "Wypatrywanie",
+    "Description": "Dawno temu żył facet, wołali na niego Sokole Oko. Słyszałeś o nim? Tak? No i wszystko jasne.",
+    "Attribute": "ATR_PER",
+    "GroupName": "Spostrzegawczość",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_CZUJNOSC": {
+    "ID": "SKILL_CZUJNOSC",
+    "Name": "Czujność",
+    "Description": "Każdy ma czasem jakieś przeczucia. Szósty zmysł bywa potrzebny, ale jeśli poprze się go praktyką w unikaniu niebezpieczeństwa, staje się niezastąpiony. Nie będę ściemniał. Bierzesz Czujność i nawet nie pytaj do czego ci się przyda. Jeżeli nigdy nie zostałeś okradziony przez kieszonkowca, nie zrozumiesz. Czujność przydaje się dosłownie w każdej sytuacji. Jesteśmy przecież otoczeni przez wrogów! Najlepszy kumpel może mieć zły dzień i poderżnąć ci gardło w czasie snu. Lawiny mają tendencję do spadania akurat gdy wspinasz się zboczem góry. Przyczajeni w krzakach mutanci tylko czekają, aż pójdziesz się odlać. Co cię uratuje w takich sytuacjach? Tylko Czujność!",
+    "Attribute": "ATR_PER",
+    "GroupName": "Spostrzegawczość",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_SKRADANIESIE": {
+    "ID": "SKILL_SKRADANIESIE",
+    "Name": "Skradanie się",
+    "Description": "Ludzie są nerwowi. Gdy usłyszą twoje kroki, może się zdarzyć, że zobaczysz lecący w twoim kierunku granat, nim w ogóle cię zobaczą. Lepiej chodzić jak Indianin. bezgłośnie. Jak człowiek widmo.",
+    "Attribute": "ATR_PER",
+    "GroupName": "Kamuflaż",
+    "Specialization": "SPEC_RANGER, SPEC_ROGUE"
+  },
+  "SKILL_UKRYWANIESIE": {
+    "ID": "SKILL_UKRYWANIESIE",
+    "Name": "Ukrywanie się",
+    "Description": "Jeden z moich kumpli, poznałem faceta na pustyni, na południu kraju, powiedział mi kiedyś, że często najlepszym sposobem walki z przeciwnikiem, jest zejść mu z drogi. Uwierz mi facet miał rację. Potrafił dosłownie rozpłynąć się w powietrzu, banda Black Cats mogła przemaszerować o cal od niego. Gdyby nie był takim spryciarze,, już dawno kopął by w kalendarz. A tak żyje do dziś i ma się świetnie. Uważaj, może właśnie za tobą stoi.",
+    "Attribute": "ATR_PER",
+    "GroupName": "Kamuflaż",
+    "Specialization": "SPEC_RANGER, SPEC_ROGUE"
+  },
+  "SKILL_MASKOWANIE": {
+    "ID": "SKILL_MASKOWANIE",
+    "Name": "Maskowanie",
+    "Description": "Zatrzeć ślady, ważna rzecz, zwłaszcza, gdy podąża za tobą zgraja łowców głów i dwa gangi i Wesoły Zabójca. Warto potrafić zamaskować obozowisko, ukryć samochów, rozpalić ognisko tak, by nie wydało nawet krzty dymu. Wierz mi, byłem kiedyś w takiej sytuacji i to, że jeszcze z tobą rozmawiam, o czymś świadczy, nie sądzisz?",
+    "Attribute": "ATR_PER",
+    "GroupName": "Kamuflaż",
+    "Specialization": "SPEC_RANGER, SPEC_ROGUE"
+  },
+  "SKILL_LOWIECTWO": {
+    "ID": "SKILL_LOWIECTWO",
+    "Name": "Łowiectwo",
+    "Description": "Tak się składa, że jeszcze nie przeglądałeś rozdziału w tej aplikacji, który opisuje stwory żyjące w tej okolicy, prawda? Uwierz mi, stworów jest cała masa. A każdy z nich posiada instynkt przetrwania. Więc jeśli będziesz chciał przyrządzić sobie na kolację jednego z nich, wiedz, że musisz być sprytniejszy. Musisz pokonać ten instynkt. To nie będzie proste. Przygotuj się na ciężką walkę o przetwanie. Albo go dorwiesz i bujesz, albo zdechniesz z głodu. Gotowy do łowów?",
+    "Attribute": "ATR_PER",
+    "GroupName": "Przetrwanie",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_ZNAJOMOSCTERENU": {
+    "ID": "SKILL_ZNAJOMOSCTERENU",
+    "Name": "Znajomość terenu",
+    "Description": "A to jak widzisz, jest jedna z tych Umiejętności, których faktycznie można się nauczyć. Wystaczy, że od dziecka wychowałeś się na pustyni, a na pewno nauczyłeś się rozróżniać jadowite jaszczurki i trujące wiechcie. Pewnie kojarzysz też, kiedy zbliża się burza piaskowa, a kiedy będzie lało. Niech zgadnę, potrafisz rozbić obóz osłonięty od słońca, ukryć go przed gangerami i dzikimi zwierzętami, tak? \nZa każdy punkt Umiejętności gracz wybiera z listy terenów: śniegi, pustynia, bagno, lasy strefy umiarkowanej, lasy tropikalne, preria, morze, rzeki i jeziora, ruiny, góry itd.",
+    "Attribute": "ATR_PER",
+    "GroupName": "Przetrwanie",
+    "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_ZDOBYWANIEWODY": {
+    "ID": "SKILL_ZDOBYWANIEWODY",
+    "Name": "Zdobywanie wody",
+    "Description": "Czasy hipermarketów odeszły w niepamięć. Zresztą nawet nie w tym problem, bo jeśli mieszkasz w mieście, nie powinieneś mieć problemów z wodą. Problemy zaczynają się na pustyni. I albo jesteś różdżkarzem, albo masz tira pełnego beczek z wodą, albo zdychasz z pragnienia po trzech dniach. Nawet po dwóch, jak sądzę.",
+    "Attribute": "ATR_PER",
+    "GroupName": "Przetrwanie",
+    "Specialization": "SPEC_RANGER"
+  }
+}

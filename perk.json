@@ -533,7 +533,7 @@
     "Name": "Otwieranie zamków elektronicznych",
     "Requirements": "Elektronika 2+, Otwieranie zamków 2+",
     "Effects description": "Podczas otwierania zamków elektronicznych możesz w teśćie dodać do swojej Elektroniki, Otwieranie zamków.",
-    "Flavor text": "Jak myślisz, kto się lepiej zna na sztuce, artysta czy historyk sztuki? Dobra, a kto szybciej otworzy elektroniczny zamek: elektronik czy złodziej? Ty nie musisz się tym przejmować, na szczęście jesteś i jednym, i drugim."
+    "Flavor text": null
   },
   "PERK_PADNIJPOWSTAN": {
     "ID": "PERK_PADNIJPOWSTAN",
@@ -675,7 +675,7 @@
     "ID": "PERK_RUCHOMYCEL",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Ruchomy cel",
-    "Requirements": "Pistolety 4+ lub Karabiny 4+ lub Broń maszynowa 4+, Spryt 12+ Percepcja 10+",
+    "Requirements": "Pistolety 4+ lub Karabiny 4+ lub Broń maszynowa 4+, Spryt 12+, Percepcja 10+",
     "Effects description": "Nie otrzymujesz kary do testu strzelania wynikającej z poruszania się celu.",
     "Flavor text": "Widziałem kiedyś w akcji Stalową Policję, jak wykańczali akurat jakichś łachmytów niedaleko Jackson. Goście spieprzali ile sił w nogach, klucząc i skacząc na boki. Oficer SP mruknął \"Chłopcy, ruchomy cel!\" Każy z tych psycholi oddał tylko jeden strzał. I żaden bandzior już nie uciekał."
   },
@@ -1843,7 +1843,7 @@
     "ID": "PERK_SPLUWAIODZNAKA",
     "Ruleset": "Prawo i Sprawiedliwość",
     "Name": "Spluwa i odznaka",
-    "Requirements": "Charakter 11+",
+    "Requirements": "Profesja: Sędzia, Charakter 11+",
     "Effects description": "Jeśli mówisz, że jesteś sędzią, to reszta świata reaguje tak, jak powinna zareagować na sędziego. Sędziostwo tak ci wyłazi z oczu, gęby i odznaki, że nikt nawet nie pomyśli, że możesz być oszustem. Zagraj tę sztuczkę za każdym razem, gdy widzisz, że MG rzuca Ci pod nogi kłodę w postaci podważenia twojego autorytetu jako sędziego. BN mogą odtąd kwestionować twoje wyroki i działania, ale nie przyczepią się do tego, że jesteś człowiekiem prawa.",
     "Flavor text": "To jest odznaka, a to moja spluwa. Jakieś wątpliwości?"
   },
@@ -1875,7 +1875,7 @@
     "ID": "PERK_BLOKADA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Blokada",
-    "Requirements": "Profesja Kierowca, Charakter 10+, Spryt 14+, Prowadzenie Pojazdów 6+",
+    "Requirements": "Charakter 10+, Spryt 14+, Prowadzenie Pojazdów 6+",
     "Effects description": "Pozwala na odcinku prostej zablokować kierownicę i jadąc z ustaloną prędkością wykonać jedną akcję bez żadnych modyfikatorów ujemnych. Wszystkie testy PP wykonują tak, jakby siedział za kierownicą i prowadził.",
     "Flavor text": "Możesz nie wierzyć, ale Cloody tak czasem robi. Mawiają: \"Pojeździsz, zobaczysz, zbaraniejesz.\" Ma taką wajchę blokady kierownicy, gaz blokuje szpilkami, a sama tarabani się na tylne siedzenie do torebki po szminkę. A torebkę, jak to kobieta, pełną ma wszystkiego, więc nim odnajdzie co trzeba..."
   },
@@ -1883,7 +1883,7 @@
     "ID": "PERK_CARMAGEDDON",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Carmageddon",
-    "Requirements": "Profesja Kierowca, Charakter 14+, Prowadzenie pojazdów 7+",
+    "Requirements": "Charakter 14+, Prowadzenie pojazdów 7+",
     "Effects description": "Jeżeli twój test taranowania powiedzie się, taranowany nie może uniknąć ataku.",
     "Flavor text": "<Trzask pękającego metalu>"
   },
@@ -1891,7 +1891,7 @@
     "ID": "PERK_JAMESDEAN",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "James Dean",
-    "Requirements": "Profesja Kierowca, Wszystkie umiejętności z grupy Siła Woli 2+, Charakter 16+",
+    "Requirements": "Wszystkie umiejętności z grupy Siła Woli 2+, Charakter 16+",
     "Effects description": "W czasie śmiertelnych pojedynków z użyciem samochodu, bohater wykonuje testy tak, jakby wszystkie jego współczynniki były większe o 2.",
     "Flavor text": "Mój tatko zwykł mawiać, że buntownicy bez powodu giną bez powodu. Tak właśnie zginął mój kumpel - młodo, szybko i bez sensu. Mówili na niego James Dean, ale pewnie nie kojarzycie ksywy."
   },
@@ -1899,7 +1899,7 @@
     "ID": "PERK_JVC",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "JVC",
-    "Requirements": "Profesja Kierowca, Spryt 16+",
+    "Requirements": "Spryt 16+",
     "Effects description": "Modyfikatory za wykonanie więcej niż jednej akcji w rundzie (na danym odcinku) są zawsze o -10% mniejsze.",
     "Flavor text": "Wołaliśmy na niego JVC, bo był skubany podzielny jak radio, mógł łapać kilka fal równocześnie i jakiś z tego szumu zawsze był. Wiesz tu niby się strzela, tu wchodzi w zakręt, a jeszcze ma czas, by odpalić cygaro - swoje i laski na fotelu obok."
   },
@@ -1907,7 +1907,7 @@
     "ID": "PERK_KOLANKA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Kolanka",
-    "Requirements": "Profesja Kierowca, Umiejętność z grupy Prowadzenie Pojazdów 5+, Zręczność 14+, Percepcja 12+",
+    "Requirements": "Umiejętność z grupy Prowadzenie Pojazdów 5+, Zręczność 14+, Percepcja 12+",
     "Effects description": "Kierowca potrafi jechać trzymając kierownicę tylko kolanami. Nie otrzymuje żadnych utrudnień, ale nie może wchodzić w zakręty ostrzejsze niż 20%. Co w tym czasie robi z rękami, zależy tylko od niego i od dziewczyny siedzącej na fotelu obok. Jeżeli kierowca postanowi wykonywać rękami czynność wymagającą uwagi (np. strzelanie z pistoletu) otrzymuje utrudnienia do testu Prowadzenia Pojazdów zależne od MG, zazwyczaj +50%",
     "Flavor text": "Znałem faceta, który lubił słuchać muzyki w trakcie jazdy. Nie miał radia, nie miał cedeka, więc grał sobie sam. Stary dobry blues na harmonijce ustnej. Co z kierownicą? Trzymał ją kolanami."
   },
@@ -1915,7 +1915,7 @@
     "ID": "PERK_LUSTERKA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Lusterka",
-    "Requirements": "Profesja Kierowca, Charakter 10+, Zręczność 12+, PP 4+",
+    "Requirements": "Charakter 10+, Zręczność 12+, PP 4+",
     "Effects description": "Kierowca potrafi wyprzedzać innych rajdowców na przewężeniach, bez konieczności zjeżdżania na pobocze i bez ryzyka uszkodzeń.",
     "Flavor text": "Mike tak miał, pamiętam, że nawet wykręcił sobie lusterka, bo mu zawadzały, jak w bramy wjeżdżał. Wiesz nie skłamię jak powiem, że potrafił zmieścić się w bramy węższe od bryki. Taa, ja też wcześniej byłem przekonany że to niemożliwe..."
   },
@@ -1923,7 +1923,7 @@
     "ID": "PERK_MISTRZKIEROWNICYUCIEKA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Mistrz kierownicy ucieka",
-    "Requirements": "Profesja Kierowca, Umiejętność z grupy Prowadzenie Pojazdów 9+",
+    "Requirements": "Umiejętność z grupy Prowadzenie Pojazdów 9+",
     "Effects description": "Jeżeli nastawisz się na defensywę, każdy kto cię atakuje za pomocą broni palnej otrzymuje utrudnienie +70% do trafienia. Takie samo utrudnienie otrzymują wszyscy atakujący z twojego wozu.",
     "Flavor text": "Żywe srebro - tak na nią mówili. Nikt nie potrafił w nią trafić. Unikała strzałów jak cholerna kaczka z komiksu. Z Vegas była, o ile pamiętam. To wiele wyjaśnia."
   },
@@ -1931,7 +1931,7 @@
     "ID": "PERK_NAJEDNAKARTE",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Na jedną kartę",
-    "Requirements": "Profesja Kierowca, Charakter 12+",
+    "Requirements": "Charakter 12+",
     "Effects description": "Jeżeli testując Prowadzenie Pojazdów postanowisz wykorzystać szczęście, rzucasz tylko jedną kostką. Potem odejmujesz od liczby oczek 1. Traktuj to tak, jakby na każdej z trzech kostek wypadł ten sam wynik.",
     "Flavor text": "Czasem są takie chwile, kiedy najlepiej zamknąć oczy i wykonać ten jeden decydujący ruch kierownicą. Tajemnica mojego sukcesu jest bardzo prosta. W krytycznych momentach zamykam oczy i daję gaz do dechy. Mam szczególny dar - często wychodzą mi ryzykowne zagrania."
   },
@@ -1939,7 +1939,7 @@
     "ID": "PERK_NIEZNISZCZALNY",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Niezniszczalny",
-    "Requirements": "Profesja Kierowca, Budowa 14+, Charakter 14+, Odporność na ból 6+",
+    "Requirements": "Budowa 14+, Charakter 14+, Odporność na ból 6+",
     "Effects description": "Wykonując testy PP Bohater ignoruje utrudnienia z ran (swoich, nie samochodu).",
     "Flavor text": "Jechaliśmy coś z 10 godzin, a Bruce prowadził. Nie spał, nie jadł, tylko krwawił. Pod Birg City dostaliśmy serią z czegoś ciężkiego. Ja tylko liczyłem: będzie miał w sobie coś ze 20 litrów krwii, więc powinniśmy dojechać do NJ zanim w końcu padnie."
   },
@@ -1947,7 +1947,7 @@
     "ID": "PERK_OCZYANIOLA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Oczy anioła",
-    "Requirements": "Profesja Kierowca, Charakter 16+",
+    "Requirements": "Charakter 16+",
     "Effects description": "Działa to cholerstwo jak jakiś czar. Jeśli siedzisz wewnątrz samochodu, do twojej reputacji dolicza się podwojona Klasa wozu.",
     "Flavor text": "Widziałeś Cloody? No właśnie..."
   },
@@ -1955,7 +1955,7 @@
     "ID": "PERK_POCIEMKU",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Po ciemku",
-    "Requirements": "Profesja Kierowca, Czujność 5+",
+    "Requirements": "Czujność 5+",
     "Effects description": "Dopóki nie przekroczysz prędkości 50 km/h, możesz nocą jeździć bez ujemnych modyfikatorów za brak reflektorów.",
     "Flavor text": "Słyszałeś historię o facecie, który wjechał do tunelu, zobaczył światełko i usłyszał syrenę? Zgasił reflektory, podjechał kawałek, wyciągnął pistolet i ustrzelił dowcipnisia z latarką."
   },
@@ -1963,7 +1963,7 @@
     "ID": "PERK_PODKONTROLA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Pod kontrolą",
-    "Requirements": "Profesja Kierowca, Charakter 12+, PP 6+",
+    "Requirements": "Charakter 12+, PP 6+",
     "Effects description": "Po uderzeniu w Offroad bryka nie traci prędkości, jeśli kierowca zda Bardzo Trudny test PP oparty na Charakterze.",
     "Flavor text": "No więc widzę, że nie mamy już szans i zaraz przydupczymy w tę kamienicę. Drę się do niego, że przed nami mur, a on mi \"Przecież widzę\" i huknął bokiem tak, że mi wszystkie plomby wyskoczyły. I wiesz, odbiło nas od tej ściany jak z katapulty, zamiast się rozkraczyć, przyspieszyliśmy, psia krew. Tyle, że sobie karoserię zarysował..."
   },
@@ -1971,7 +1971,7 @@
     "ID": "PERK_PROWADZENIENASCHYLONEGO",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Prowadzenie na schylonego",
-    "Requirements": "Profesja Kierowca, Charakter 12+, PP 6+",
+    "Requirements": "Charakter 12+, PP 6+",
     "Effects description": "Potrafisz tak ukryć się w samochodzie, tak, że z zewnątrz widać tylko twoją głowę. Zapewnia to osłonę przed ostrzałem, a ty, kierując, nie otrzymujesz żadnych utrudnień. Normalnie MG doliczyłby utrudnienie +30%",
     "Flavor text": "Wszyscy turyści brali ten wóz za samochód - widmo. Tylko miejscowi wiedzieli, że on zawsze jeździ schylony. Prowadził samochody od maleńkości - chyba się przyzwyczaił."
   },
@@ -1979,7 +1979,7 @@
     "ID": "PERK_SIMPLYTHEBEST",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Simply the best!",
-    "Requirements": "Profesja Kierowca",
+    "Requirements": null,
     "Effects description": "Jeśli kierowca wygrał ostatni rajd, w kolejnym dostaje prawo jednego przerzutu dowolnej kości podczas dowolnego testu PP.",
     "Flavor text": "\"You're Simpy the Best\", jak dawniej śpiewała królowa. Tak o sobie mówią niektórzy kierowcy, którzy akurat mają farta i coś idzie po ich myśli. Wygra taki turniej, a potem łazi i tylko nuci Simply the Best..."
   },
@@ -1987,7 +1987,7 @@
     "ID": "PERK_STEVEWONDER",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Steve Wonder",
-    "Requirements": "Profesja Kierowca, Spryt 10+, Charakter 10+, Wyczucie emocji 3+",
+    "Requirements": "Spryt 10+, Charakter 10+, Wyczucie emocji 3+",
     "Effects description": "Kierowca automatycznie zdaje test Reputacji na starcie. Za każdym razem bohater musi wymyślić inny sposób na zdobycie poklasku publiczności.",
     "Flavor text": "Facet zakładał okulary przeciwsłoneczne i zaczynał się drzeć przez megafon, że nic nie widzi i że prosi o pomoc publiczności. No powiem ci, widownia go kochała. Setki osób wydzierały się na cały głos: \"Hoopa, ciąć, prawo, ostry...\""
   },
@@ -1995,7 +1995,7 @@
     "ID": "PERK_TANGOILESZCZ",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Tango i Leszcz",
-    "Requirements": "Profesja Kierowca,  Zręczność 12+, PP 8+",
+    "Requirements": "Zręczność 12+, PP 8+",
     "Effects description": "Kierowca obraca wóz o 360 stopni, a w trakcie obrotu wykonuje strzał. Żadna z tych akcji nie wiąże się z utrudnieniami wynikającymi z wykonania dwóch działań w rundzie, ale wszystkie inne utrudnienia (np. za odległość) dolicza się w normalny sposób.",
     "Flavor text": "Facet siedział na zderzaku i strzelał. Siwy złamał wóz, obrócił go w pełnym pędzie o 180 stopni, wypalił do palanta trzy pociski prosto w prawą oponę i ponownie obrócił się o 180. Takie rzeczy wcześniej widziałem tylko na jakimś filmie z jazdą figurową na lodzie."
   },
@@ -2003,7 +2003,7 @@
     "ID": "PERK_TYLEMWPRZOD",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Tyłem w przód",
-    "Requirements": "Profesja Kierowca, Umiejętność z grupy Prowadzenie Pojazdów 3+, Charakter 8+",
+    "Requirements": "Umiejętność z grupy Prowadzenie Pojazdów 3+, Charakter 8+",
     "Effects description": "Poświęcając wszystkie zdobyte zderzaki i długości (minimum 2 zderzaki), jesteś w stanie gwałtownie zahamować i uderzyć tyłem samochodu w jednego z jadących za tobą współzawodników. Taranując w ten sposób nie dodajesz utrudnienia +20% do testu PP. Jeżeli taranujesz w ten sposób i zarówno ty, jak i broniący się wykonaliście pomyślnie test PP, dochodzi do taranowania.",
     "Flavor text": "Opancerzony tyłek to podstawa. Nikt nie spodziewa się, że zaatakujesz go dupą."
   },
@@ -2011,7 +2011,7 @@
     "ID": "PERK_WAKEMEUPBEFOREYOUGOGO",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Wake me up before you go go!",
-    "Requirements": "Profesja Kierowca, Charakter 16+",
+    "Requirements": "Charakter 16+",
     "Effects description": "\"...before you go go\" zanucił pod nosem i nagle poczułem, że wóz odlatuje. A wiesz, do mety zostało coś ze 100 metrów. Ja pierniczę, nikt inny w całym Detroit nie robi tak ostatnich prostych.",
     "Flavor text": "Na dwóch ostatnich odcinkach umiejętność PP bohatera zwiększa się 2 punkty (ale nie przesuwa to Suwaka, po prostu dwa punkty)."
   },
@@ -2019,7 +2019,7 @@
     "ID": "PERK_WITHORWITHOUTYOU",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "With or without you!",
-    "Requirements": "Profesja Kierowca, Spryt 16+, Percepcja 14+, PP 6+",
+    "Requirements": "Spryt 16+, Percepcja 14+, PP 6+",
     "Effects description": "Bohater może pełnić jednocześnie funkcję kierowcy i pilota.",
     "Flavor text": "Tego ranka byłem mocno rozdrażniony, więc pytam spokojnie: \"Wsiadasz czy nie?\". A on mi się zwymiotował na buty, alkoholik pieprzony. Wsiadłem sam, pojechałem, wygrałem. Bez pilota. Do dziś mam zdjęcie w Cylindrach."
   },
@@ -2027,7 +2027,7 @@
     "ID": "PERK_WYSIADKA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Wysiadka",
-    "Requirements": "Profesja Kierowca, Zręczność 14+, Charakter 14+, Kondycja 2+",
+    "Requirements": "Zręczność 14+, Charakter 14+, Kondycja 2+",
     "Effects description": "Kierowca potrafi wyskoczyć z pędzącego wozu i jeśli zda Trudny test Kondycji, nie otrzymuje żadnych obrażeń.",
     "Flavor text": "Radź sobie sam, ja wysiadam. Otworzył drzwi i wyskoczył. A akurat mieliśmy 110 na blacie i chcieliśmy wchodzić w zakręt. No nie powiem, żebym nie był zaskoczony..."
   },
@@ -2035,7 +2035,7 @@
     "ID": "PERK_ZNIKAJACYPUNKT",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Znikający punkt",
-    "Requirements": "Profesja Kierowca, dowolna umiejętność z grupy Prowadzenie pojazdów 5+, Mechanika 5+, Fizyka 2+",
+    "Requirements": "dowolna umiejętność z grupy Prowadzenie pojazdów 5+, Mechanika 5+, Fizyka 2+",
     "Effects description": "Masz szczególne wyczucie samochodów - dobrze poznałeś możliwości poszczególnych aut. Za każdym razem, gdy próbujesz zwiększyć prędkość samochodu ponad prędkość maksymalną, nie zmniejsza się sprawność wozu.",
     "Flavor text": "Facet krzyknął \"Warp 5\" - czy coś takiego - i tyle go widzieliśmy."
   },
@@ -2043,7 +2043,7 @@
     "ID": "PERK_ZOLW",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Żółw",
-    "Requirements": "Profesja Kierowca, Charakter 12+, Spryt 14+, PP 6+",
+    "Requirements": "Charakter 12+, Spryt 14+, PP 6+",
     "Effects description": "Bohatera o wiele trudniej staranować, bo doskonale się zastawia i tak manewruje bryką, że trudno go trafić i zepchnąć z trasy. Taranujący otrzymuje dodatkowy modyfikator +40% do testu PP.",
     "Flavor text": "Młody podchodzi do mnie i mówi \"Mówcie na mnie Żółw\". No to ja sobie myślę, oho, niezła ksywka dla rajdowca. A on uśmiecha się i dodaje: \"Bo wiecie, mnie to się nie da ruszyć na trasie. Jak żółwia\" Ni diabła do dziś nie wiem o co mu dokładnie chodziło."
   },
@@ -2051,7 +2051,7 @@
     "ID": "PERK_TERAZMOZESZ",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Teraz możesz",
-    "Requirements": "Profesja Pilot, Spryt 14+, Wypatrywanie 2+",
+    "Requirements": "Spryt 14+, Wypatrywanie 2+",
     "Effects description": "Pilot przed rajdem może wybrać 1 odcinek, na którym kierowca będzie mógł zaszaleć. Na tym odcinku może zwiększyć prędkość o 40 km/h - bez jakichkolwiek dodatkowych utrudnień.",
     "Flavor text": "\"To jedyny moment tego rajdu, kiedy możesz ciąć. Więc tnij.\""
   },
@@ -2059,7 +2059,7 @@
     "ID": "PERK_TOTUTAJ",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "To tutaj..",
-    "Requirements": "Profesja Pilot, Spryt 12+, Charakter 10+",
+    "Requirements": "Spryt 12+, Charakter 10+",
     "Effects description": "Przed wyścigiem pilot może wytłumaczyć w jasny i zrozumiały dla kierowcy sposób dowolny odcinek trasy. Pilot, pod warunkiem, że poznał trasę, wykonuje Trudny test Sprytu dla każdego odcinka - opowiadając o nim kierowcy. Kierowca wykonuje Trudny test Sprytu dla każdego z tych odcinków, dla których pilot zdał swój test. Jeśli kierowca zda, dostaje ułatwienie -5% dla danego odcinka.",
     "Flavor text": "Judy, może nie najbardziej seksowna laska w Detroit, ale nie można jej było nie lubić. Rewelacyjny pilot. Potrafiła niesamowicie wytłumaczyć trasę kierowcy: \"Ten zakręt tu to dokładnie to co przed knajpą u Barrego, potem masz taką hoopę jak pod prysznicami, więc ostrożnie i potem jest prosta długa na dwa parkingi...\""
   },
@@ -2067,7 +2067,7 @@
     "ID": "PERK_UWAZAJZANAMI",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Uważaj, za nami!",
-    "Requirements": "Profesja Pilot, Spryt 12+",
+    "Requirements": "Spryt 12+",
     "Effects description": "Jeśli Pilot zda Bardzo Trudny test Sprytu, przed każdym kolejnym Odcinkiem to znaczy, że wie co się na nim dzieje i nie musi patrzeć w rozpiskę. Ten moment może wykorzystać na inną akcję.",
     "Flavor text": "Debil zamiast gapić się w papiery rozglądał się naokoło. Zatrzymałem brykę i mu mówię: \"Patrz kretynie w rozpiskę trasy, a nie za nas, bo się rozpieprzymy!\". A on mi mówi, że rozpiskę wykuł na pamięć, a patrzy za nas by krzyknąć, gdy ktoś będzie chciał do nas strzelać. No nie powiem, bystry gość jak na pilota..."
   },
@@ -2075,7 +2075,7 @@
     "ID": "PERK_WEDONTNEEDANOTHERHERO",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "We don't need another hero",
-    "Requirements": "Profesja Pilot, Percepcja 12+, Charakter 12+",
+    "Requirements": "Percepcja 12+, Charakter 12+",
     "Effects description": "Obecność pilota pozwala raz na wyścig zmniejszyć zadeklarowaną prędkość już po nieudanym rzucie. Wykonuje się drugi test PP, z prędkością, zmniejszoną przynajmniej o 30 km/h",
     "Flavor text": "No wiesz, \"We don't need another hero\", tak zwykł mawiać mój pilot, gdy rozpalały mi się oczy i zaczynałem jechać jak wariat. Wtedy dostawałem w pysk, a Jack wydzierał mi się wprost do ucha: \"Te, hero, jak chcesz ginąć, zmień pilota!\""
   },
@@ -2083,7 +2083,7 @@
     "ID": "PERK_ATRAPA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Atrapa",
-    "Requirements": "Profesja Mechanik, Mechanika 3+, Percepcja 10+",
+    "Requirements": "Mechanika 3+, Percepcja 10+",
     "Effects description": "Potrafisz podmienić części w cudzym samochodzie w taki sposób, by na pierwszy rzut oka wyglądały na sprawne. W rzeczywistości montujesz atrapę, która nie nadaje się nawet do naprawy. W zależności od stopnia komplikacji atrapy montaż zajmuje od kilku minut do kilku godzin. Im bardziej istotny element, i im większy, tym łatwiejsza do rozpoznania atrapa. Poziom Trudności montażu i testu rozpoznania (Mechanika) ustala MG - najczęściej na Bardzo Trudny.",
     "Flavor text": "Te śruby wyglądały jak prawdziwe..."
   },
@@ -2091,7 +2091,7 @@
     "ID": "PERK_KTOSSIEBRZYDKOBAWIL",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Ktoś się brzydko bawił",
-    "Requirements": "Profesja Mechanik, Wypatrywanie 2+, Otwieranie zamków 2+, Percepcja 12+",
+    "Requirements": "Wypatrywanie 2+, Otwieranie zamków 2+, Percepcja 12+",
     "Effects description": "Bohater z łatwością rozpoznaje udane i nieudane próby grzebania przy zamkach w samochodzie (drzwi, bagażnik, stacyjka). Wystarczy że zda Trudny test Wypatrywania albo Otwierania zamków, zależy która umiejętność jest na wyższym poziomie.",
     "Flavor text": "Popatrzcie na te rysy przy zamku... Ktoś się  brzydko bawił."
   },
@@ -2099,7 +2099,7 @@
     "ID": "PERK_LATAJACYHOLENDER",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Latający Holender",
-    "Requirements": "Profesja Mechanik, Prowadzenie pojazdów 5+, Mechanika 3+",
+    "Requirements": "Prowadzenie pojazdów 5+, Mechanika 3+",
     "Effects description": "Nawet jeżeli Sprawność samochodu spadła do 0, potrafisz zmusić wóz do dalszej jazdy. Auto przejedzie jeszcze tyle kilometrów, ile wynosi suma twoich umiejętności Mechanika i Prowadzenie Pojazdów. Potem zdechnie definitywnie. Prędkość samochodu oscyluje pomiędzy zerem a pięcioma kilometrami na godzinę.",
     "Flavor text": "Zobaczyliśmy paskudny wrak samochodu, normalnie według praw fizyki coś takiego nie miałoby prawa jeździć. Ale tamten wrak toczył się na trzech kołach - wolno, jednak przed siebie. Nic tylko splunąć i uciekać."
   },
@@ -2107,7 +2107,7 @@
     "ID": "PERK_MASKOWANIEAUTA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Maskowanie auta",
-    "Requirements": "Profesja Mechanik, Maskowanie 5+, Mechanika 2+",
+    "Requirements": "Maskowanie 5+, Mechanika 2+",
     "Effects description": "Maskowanie samochodów wychodzi ci bardzo dobrze. Otrzymujesz premię -20% przy testach Maskowania samochodów. Ponadto, jeżeli tylko posiadasz dostępne części, potrafisz sprawić by samochód wyglądał jak pojazd innego typu. Drastyczne zmiany wyglądu wiążą się z Bardzo Trudnym lub Cholernie Trudnym testem Maskowania.",
     "Flavor text": "Potrafił zamaskować samochód na sto sposobów. Gdyby się postarał, zobaczyłbyś przed sobą kombajn ziemniaczany."
   },
@@ -2115,7 +2115,7 @@
     "ID": "PERK_PIANISTA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Pianista",
-    "Requirements": "Profesja Mechanik, Zwinne dłonie 6+, Spryt 12+",
+    "Requirements": "Zwinne dłonie 6+, Spryt 12+",
     "Effects description": "W czasie testów mechaniki odnoszących się do silników samochodowych bohater nie potrzebuje zmysłu wzroku.",
     "Flavor text": "Była niewidoma od urodzenia - jakaś paskudna choroba. Mimo wszystko, była niezłym mechanikiem. Mówili na nią pianistka, miała takie gotyckie dłonie i potrafiła naprawić każdy silnik posługując się tylko dotykiem."
   },
@@ -2123,7 +2123,7 @@
     "ID": "PERK_ZNAWCASAMOCHODOW",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Znawca samochodów",
-    "Requirements": "Profesja Mechanik, Wszystkie umiejętności z grupy Prowadzenie pojazdów 4+, Mechanika 4+, Elektronika 2+",
+    "Requirements": "Wszystkie umiejętności z grupy Prowadzenie pojazdów 4+, Mechanika 4+, Elektronika 2+",
     "Effects description": "Rozpoznajesz wszystkie parametry samochodu (takie jak zwrotność, wytrzymałość, maksymalna prędkość). Wystarczy, że poobserwujesz jak bryka jeździ, wsłuchasz się w warkot silnika i MG śpiewa jak na spowiedzi. Jeżeli jeszcze masz okazję zajrzeć pod maskę sprawa jest jasna. Powinieneś jeszcze zdać test Mechaniki, a poziom trudności ustali Ci prowadzący (bazowo test Bardzo Trudny)",
     "Flavor text": "Prawdziwy koneser samochodów zawiązuje sobie oczy, podchodzi do auta, wyciąga rurkę i zasysa trochę paliwa. Potem bada bukiet, wypluwa wszystko do pojemniczka i mówi \"Pontiac. Srebrny z 1972 roku. Mały przebieg, świece do wymiany.\""
   },
@@ -2131,7 +2131,7 @@
     "ID": "PERK_ODDAMPOPIERWSZYM",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Oddam po pierwszym",
-    "Requirements": "Profesja Menadżer, Perswazja 5+",
+    "Requirements": "Perswazja 5+",
     "Effects description": "Wykonując Trudny test Perswazji bohater potrafi naciągnąć sponsora na tyle dodatkowego paliwa ile akurat potrzebne jest do wyścigu. Po wyścigu uszereguj wszystkie zespoły i podziel ich liczbę przez 2. Jeżeli zespół bohatera znajdzie się w połowie zwycięzców, nie trzeba zwracać zużytego paliwa. Jeśli ekipa bohatera przegrała, musi zwrócić dwa razy tyle paliwa i to w ciągu miesiąca.",
     "Flavor text": "Chodził od ekipy do ekipy i pożyczał gamble na paliwo. Każdemu powtarzał \"oddam po pierwszym zwycięstwie\". Pożyczali mu, bo chłopak był młody i obiecujący. Pewnego dnia zjechał z toru, wcisnął gaz do dechy i odjechał gdzieś na zachód. I tyle go widzieli."
   },
@@ -2139,7 +2139,7 @@
     "ID": "PERK_PANKTOS",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Pan Ktoś",
-    "Requirements": "Profesja Menadżer, Zdolności przywódcze 5+",
+    "Requirements": "Zdolności przywódcze 5+",
     "Effects description": "W kontaktach ze sponsorami lub potencjalnymi sponsorami bohater może powtórzyć nieudany test Reputacji (każdy test tylko raz).",
     "Flavor text": "Pan Ktoś nie musi się przedstawiać."
   },
@@ -2147,7 +2147,7 @@
     "ID": "PERK_UWAZAJDZISNABOBA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Uważaj dziś na Boba",
-    "Requirements": "Profesja Menadżer, Spryt 14+, Postrzeganie emocji 7+",
+    "Requirements": "Spryt 14+, Postrzeganie emocji 7+",
     "Effects description": "Bohater rozpoznaje w jakiej formie znajdują się inni ludzie. Wystarczy, że poobserwuje ich przez kilkanaście minut przed wyścigiem. Bohater orientuje się kto ma kaca, kto zachorował, kto jest w znakomitej formie. MG powinien zdradzić orientacyjne utrudnienia i dodatne modyfikatory, którymi obarczeni są niedysponowani zawodnicy, ale nie musi podawać przyczyn ich stanu.",
     "Flavor text": "Jay miała ciężką noc. Patti nie jest pewna czy założyła właściwą bieliznę. Bob wygląda na poważnego - jest w świetnej formie. Uważajcie na Boba."
   },
@@ -2155,7 +2155,7 @@
     "ID": "PERK_WJAZDNAAMBICJE",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Wjazd na ambicję",
-    "Requirements": "Profesja Menadżer, Blef 8+, Charakter 16+",
+    "Requirements": "Blef 8+, Charakter 16+",
     "Effects description": "Sztuczkę stosuje się tuż przed wyścigiem. Jeżeli ofiara nie zda Bardzo Trudnego testu Niezłomności, w trakcie trwania wyścigu nie może dobrowolnie zmniejszyć prędkości poniżej prędkości z jaką jedzie kierowca z zespołu Bohatera, który użył sztuczki. Jeśli prędkość obniży się mimo wszystko (niezależnie od przyczyn). Dopóki kierowca nie wyrówna prędkości, otrzymuje, wynikające ze stresu utrudnienie +50% do wszystkich testów Prowadzenia Pojazdów. Sztuczki można użyć raz na wyścig, wobec jednej osoby.",
     "Flavor text": "Patti łapie czasami taką fazę - patrzy na frajera i mówi: \"Jaki malutki samochodzik. Chyba nie ma zbyt wysokich osiągów\". Facet pali cegłę, a potem robi wszysto by udowodnić że jest najlepszy."
   },
@@ -2163,7 +2163,7 @@
     "ID": "PERK_WPADLEMDOWASZFLASZKA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Wpadłem do was z flaszką",
-    "Requirements": "Profesja Menadżer, Postrzeganie emocji 2+, Zdolności przywódcze 2+",
+    "Requirements": "Postrzeganie emocji 2+, Zdolności przywódcze 2+",
     "Effects description": "Bohater wie jak przełamać pierwsze lody w rozmowie z konkurencyjną ekipą. Po wspólnym wieczorku zapoznawczym wszystkie późniejsze próby obrony przed Perswazją i Blefem bohatera będą trudniejsze o +20%. Utrudnienie obowiązuje do czasu gdy ktoś z przeciwnej ekipy wykona wreszcie udany test Niezłomności.",
     "Flavor text": "Cześć. Jestem waszym nowym sąsiadem z warsztatu obok. Pomyślałem, że wpadnę do was z flaszką, wiecie wieczorek zapoznawczy. Może pogadamy o samochodach, albo coś?"
   },
@@ -2171,7 +2171,7 @@
     "ID": "PERK_DAJMIGONADZIEWIATA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Daj mi go na dziewiątą",
-    "Requirements": "Profesja Agent, Budowa 12+, Broń maszynowa 5+",
+    "Requirements": "Budowa 12+, Broń maszynowa 5+",
     "Effects description": "Stosuje się do karabinów na stałe zamontowanych do bryki. Strzelec dostaje +2 do umiejętności Broń maszynowa. Otrzymana premia nie przesuwa suwaka.",
     "Flavor text": "Bruce jest strzelcem jedynym w swoim rodzaju. To chyba jedyny facet w tej branży, który nie wywala całego magazynka podczas rajdu. Czeka sobie cierpliwie, a dopiero gdy ma brykę na muszce, strzela."
   },
@@ -2179,7 +2179,7 @@
     "ID": "PERK_PROSTOPODKOLA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Prosto pod koła",
-    "Requirements": "Profesja Agent, Rzucanie 5+, Znajomość terenu 2+",
+    "Requirements": "Rzucanie 5+, Znajomość terenu 2+",
     "Effects description": "Potrafisz rzucać granatem z pędzącego samochodu w taki sposób, żeby trafił dokładnie pod podwozie innego wozu, jadącego tuż za tobą (jedna długość) Granat eksploduje pod autem zadając ciężkie obrażenia.",
     "Flavor text": "To coś jak kręgle, tylko bardziej głośne."
   },
@@ -2187,7 +2187,7 @@
     "ID": "PERK_PRZESKOK",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Przeskok",
-    "Requirements": "Profesja Agent, Kondycja 2+, Zręczność 14+",
+    "Requirements": "Kondycja 2+, Zręczność 14+",
     "Effects description": "Bohater potrafi przeskakiwać między dachami jadących samochodów. Poziom Trudności takich prób jest zawsze co najwyżej Problematyczny.",
     "Flavor text": "Coś walnęło w dach, czy mi się zdawało?"
   },
