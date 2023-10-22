@@ -1023,14 +1023,6 @@
     "Effects description": "Bohater potrafi zakonserwować żywność, którą zdobył (mięso, wypieki, itp.) Jedzenie nie zepsuje się przez kilka miesięcy.",
     "Flavor text": "Nie lubię suszonego mięsa - smakuje jak podeszwa buta. Z drugiej strony nie narzekam. Jadłem już koty i komary widliszki. Bywały miesiące, że jedynie indiański susz utrzymywał mnie przy życiu. Bez dwóch zdań, konserwacja żywności to przydatna Sztuczka."
   },
-  "": {
-    "ID": null,
-    "Ruleset": null,
-    "Name": null,
-    "Requirements": null,
-    "Effects description": null,
-    "Flavor text": null
-  },
   "PERK_URODZONYMORDERCA": {
     "ID": "PERK_URODZONYMORDERCA",
     "Ruleset": "Neuroshima Edycja 1.5",
@@ -1539,7 +1531,7 @@
     "ID": "PERK_URODZONYCYBORG",
     "Ruleset": "Bohater do kwadratu",
     "Name": "Urodzony cyborg",
-    "Requirements": "Budowa 12+, można wybrać tylko na etapie tworzenia postaci",
+    "Requirements": "Budowa 12+, Cecha Startowa",
     "Effects description": "Organizm bohatera nigdy nie odrzuca wszczepów.",
     "Flavor text": "Znałem kiedyś takiego melancholijnego gościa - snuł się ze zwieszoną głową i w ogóle życie mu się nie podobało. Potem poznał jakąś laskę z gangu Cyberpsychopatów i można powiedzieć, że coś między nimi zaiskrzyło. Całkowicie go odmieniła."
   },
@@ -1826,7 +1818,7 @@
   "PERK_BLOKTONGA": {
     "ID": "PERK_BLOKTONGA",
     "Ruleset": "Prawo i Sprawiedliwość",
-    "Name": "Blok tongą",
+    "Name": "Blok tonfą",
     "Requirements": "Broń ręczna 3+, Zręczność 9+, tylko przy użyciu tonfy.",
     "Effects description": "Chwytając tonfę za drugi, poprzeczny uchwyt i układając ją wzdłuż przedramienia, jesteś w stanie wykonywać bloki przeciwko broni białej. Masz z automatu jeden sukces przeciwko atakowi przeciwnika - do tego dochodzą kolejne z testu. Może nie krzywdzisz sukinsyna, ale pełna defensywa pozwoli ci przetrwać aż przybędzie wsparcie.",
     "Flavor text": "Gdyby nie ten patent, nie miałbym już ręki. Wyleciał na mnie psychol z mieczem, a ja miałem tylko tonfę i mało miejsca. Ani uniknąć, ani nic. No to biorę tonfę za drugi uchwyt, by leżała wzdłuż przedramienia i blokuję cios! Ale się pacjent zdziwił, tak długo to robił, że zdążyłem mu przypieprzyć."
@@ -1979,7 +1971,7 @@
     "ID": "PERK_SIMPLYTHEBEST",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Simply the best!",
-    "Requirements": null,
+    "Requirements": "Brak",
     "Effects description": "Jeśli kierowca wygrał ostatni rajd, w kolejnym dostaje prawo jednego przerzutu dowolnej kości podczas dowolnego testu PP.",
     "Flavor text": "\"You're Simpy the Best\", jak dawniej śpiewała królowa. Tak o sobie mówią niektórzy kierowcy, którzy akurat mają farta i coś idzie po ich myśli. Wygra taki turniej, a potem łazi i tylko nuci Simply the Best..."
   },

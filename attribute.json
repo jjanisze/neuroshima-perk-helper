@@ -1,26 +1,31 @@
 {
   "ATR_BUD": {
     "ID": "ATR_BUD",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Budowa",
     "Description": "Jeśli przeznaczysz na nią mało punktów, wyciągniesz kopyta przy pierwszym starciu. Jeden cios w papę i będzie po tobie. Albo inaczej - zatrzasną się za tobą drzwi i co? Zdechniesz z głodu, bo nie będziesz ich potrafił wyważyć. Spadnie na ciebie kupa żelastwa i zostaniesz wprasowany w ziemię. Bez wysokiej Budowy nie przetrwasz ani godziny."
   },
   "ATR_ZRE": {
     "ID": "ATR_ZRE",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Zręczność",
     "Description": "Jeśli będziesz miał niską Zręczność, nie zdołasz trafić przeciwnika. A wtedy on wyciągnie spluwę i odstrzeli ci łeb. Gdy będziesz miał niską Zręczność, nie otworzysz zamka w drzwiach, ani nie zdołasz przebiec po walącym się murze. Nie uskoczysz przed przewracającym się słupem telegraficznym i nie złapiesz się krawędzi, gdy zawali się podłoga_ Przeznacz mało punktów na Zręczność..."
   },
   "ATR_CHA": {
     "ID": "ATR_CHA",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Charakter",
     "Description": "W dzisiejszych Stanach nie ma miejsca dla mięczaków ani życiowych niedorajd. Trzeba być kimś, by przetrwać każdy kolejny dzieli. To, jaki masz Charakter wyjdzie na wierzch bardzo szybko. Wtedy, gdy banda gangerów zechce skroić cię ze sprzętu. Wtedy, kiedy będziesz musiał wydobyć z jakiegoś patafiana ważne informacje. Wtedy, kiedy celującemu prosto w twój łeb facetowi będziesz musiał wyjaśnić, by odłożył spluwę. Albo go przekonasz, albo wyciągniesz kopyta, To jak, Ile punktów na Charakter?"
   },
   "ATR_SPR": {
     "ID": "ATR_SPR",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Spryt",
     "Description": "Możesz być zbudowany jak tytan, zręczny jak Jessie James, twardy jak Tommy Lee Jones i spostrzegawczy jak jasna cholera.. Ale nadal będziesz tylko kukłą. Palantem, który wlezie w każdą zasadzkę. Kretynem, który nie zdoła rozbroić tykającej bomby. Nie naprawisz sobie wozu, ani nie będziesz potrafił opatrzyć ran. Nie zatrzymasz walącej się z cholernie dużą prędkością windy, ani nie wyłączysz mechanicznego dźwigu, który właśnie oszalał. Zdechniesz ubabrany we własnych flakach i wciąż nie będziesz kurnał, jak to się stało. Trzeba być naprawdę łebskim gościem, by przetrwać tu dłużej niż kilka dni. Pamiętaj o tym."
   },
   "ATR_PER": {
     "ID": "ATR_PER",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Percepcja",
     "Description": "Musisz mieć oczy dookoła glowy. Za każdym rogiem czai się śmierć. Mutanci, ghule, gangersi, wszyscy oni tylko czekają na twój błąd. Chwila nieuwagi i obudzisz się z lufą przystawioną do głowy. Weź mało punktów na Percepcję, a nawet nie zauważysz swojej śmierci. Nie będziesz wiedział. kiedy potrącił cię samochód, kiedy ostrze piły tarczowej przetnie powietrze i wbije ci się w bebechy. Ile punktów?"
   }

@@ -1,21 +1,25 @@
 {
   "SPEC_TECH": {
     "ID": "SPEC_TECH",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Technik",
     "Description": "Tak brachu, urodziłeś się ze śrubokrętem w ręce. Potrafisz naprawić dosłownie wszystko, od samochodu, przez system sterowania pociskami, na mikserze kończąc. Wystarczy, że spojrzysz na jakieś plany, a już wiesz, co przedstawiają. Wystarczy, że dotkniesz, a już działa. To dar. Nie lekceważ go."
   },
   "SPEC_WARRIOR": {
     "ID": "SPEC_WARRIOR",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Wojownik",
     "Description": "Różne są umiejętności, jedni wspaniale gotują, inni potrafią grać na gitarze. Ty potrafisz walczyć. Jesteś w tym dobry. Jeden z najlepszych. Rozwalić ośmiu palantów bez zmiany magazynka? To proste. Odstrzelić łeb facetowi ochranianemu przez zgraję ochroniarzy, mając w Glocku jeden pocisk? To da się zrobić. Wylatując z piątego piętra obrócić się w powietrzu i odstrzelić łby dwójce kretynów, nim zrzucą za tobą granat? Tak..."
   },
   "SPEC_RANGER": {
     "ID": "SPEC_RANGER",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Ranger",
     "Description": "Pustynia, chłopcze, to twój żywioł. I powiem ci, nie wiem co widzisz w tej kupie piachu, co podnieca cię w przedzieraniu się przez krzaczory, łażeniu po lesie i polowaniu na zwierzaki. Nie mam bladego pojęcia, ale trzeba ci przyznać: jesteś w tym dobry. Potrafisz wytropić nawet mrówkę. Znaleźć żródło czystej wody na środku Mohawe. Rozpalisz ogień, rozbijesz obóz, przygotujesz posiłek i będziesz się świetnie bawił w warunkach, w których ja zdechłym z głodu. Nie bądź taki zadowolony. To wciąż ja mam w ręce gnata. Więc nawet nie próbuj się głupio uśmiechać."
   },
   "SPEC_ROGUE": {
     "ID": "SPEC_ROGUE",
+    "Ruleset": "Neuroshima 1.5",
     "Name": "Cwaniak",
     "Description": "Wchodzisz do nieznanej ci dotąd osady i zawsze, ale to zawsze, trafiasz do właściwej knajpy, rozmawiasz z właściwym barmanem i rozpoczynasz rozmowę tak, że facet od razu staje się twoim przyjacielem."
   }
