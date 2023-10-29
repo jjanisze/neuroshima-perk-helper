@@ -267,7 +267,7 @@
     "ID": "PERK_GUNFIGHT",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Gunfight",
-    "Requirements": "Pistolety 4+ Zręczność 14+",
+    "Requirements": "Pistolety 4+, Zręczność 14+",
     "Effects description": "Wykonując strzał z przyłożenia możliwość użycia umiejętności Strzelanie zamiast Bijatyka w walce wręcz.",
     "Flavor text": "Facet nie był karateką, ale dbał o to, by mu nikt spluwy nie wziął. Potrafiłby odstrzelić ci kapelusz trzymając spluwę za swoimi plecami. Nawet byś nie wiedział, skąd padł strzał."
   },
@@ -435,7 +435,7 @@
     "ID": "PERK_NAPRAWDETONIEMOJAWINA",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Naprawdę, to nie moja wina",
-    "Requirements": "Mechanika 3+ Spryt 13+",
+    "Requirements": "Mechanika 3+, Spryt 13+",
     "Effects description": "Potrafisz uszkodzić urządzenie w taki sposób, że do jego naprawy wymagany będzie Bardzo trudny test Mechaniki. Musisz poświęcić na to około kwadransu. Urządzenie nie może mieć zabezpieczeń np. w postaci zwartego pancerza - musisz mieć dostęp do wnętrza. Sztuczka nie dotyczy bardzo prostych urządzeń.",
     "Flavor text": "Ten sukinsyn oparł się o barierkę i wtedy nagle spadł mu kapelusz. Mówię ci, to niewiarygodne. Pieprzony kapelusz dostał się między łopatki turbiny. Najpierw coś zgrzytnęło, potem zapiszczało, zadymiło. I w końcu wybuchło. Ledwie uszliśmy z życiem. A teraz Chicago nie ma elektrowni."
   },
@@ -451,7 +451,7 @@
     "ID": "PERK_NIEWRAZLIWOSCNALEKKIERANY",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Niewrażliwość na lekkie rany",
-    "Requirements": "Odporność na ból 4+ Charakter 12+",
+    "Requirements": "Odporność na ból 4+, Charakter 12+",
     "Effects description": "Po otrzymaniu Lekkiej rany lub Draśnięcia, Bohater nie musi wykonywać testu Odporności na ból, tak jakby automatycznie zdał test.",
     "Flavor text": "A ja tylko czekałem, aż Johnemu wbiją ten bagnet w nogę - to jego ulubiona sztuczka. I stało się, wbili mu to żelazo, głęboko, tak na dziesięć centów. \"I co, boli?\" - zapytali. A on na to jak zwykle: \"Bardziej zaboli was\" i połamał im ręce i nogi, aż trzeszczało. Cały Johny. Lubi, jak mu ktoś coś gdzieś wbije... Czeka na to i dopiero potem robi chłopakom krzywdę."
   },
@@ -859,7 +859,7 @@
     "ID": "PERK_TARGOWANIESIE",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Targowanie się",
-    "Requirements": "Niezłomność 7+ Perswazja 4+",
+    "Requirements": "Niezłomność 7+, Perswazja 4+",
     "Effects description": "Podczas testów handlu przeciwnik zdaje o poziom wyższe testy Niezłomności.",
     "Flavor text": "Moja największa wtopa? Poszedłem na bazar w Salt Lake i nieopatrznie wdałem się w rozmowę z jakimś handlarzem. Po godzinie wymieniłem nowiutki kevlar na medalik ze świętym Antonim."
   },
@@ -1443,7 +1443,7 @@
     "ID": "PERK_ZBROJMISTRZ",
     "Ruleset": "Gladiator",
     "Name": "Zbrojmistrz",
-    "Requirements": "Zręczność 12+, Spryt 12+, Broń biała (ręczna) 4+",
+    "Requirements": "Zręczność 12+, Spryt 12+, Broń ręczna 4+",
     "Effects description": "Potrafisz stworzyć nietypową broń do walki wręcz z dowolnych częśći. Czynność trwa na tyle długo, że sztuczkę można wykorzystać tylko poza areną. Gracz ustala z MG wygląd, zasady działania i ewentualne modyfikatory wynikające z użycia broni. Konstrukcja okazuje się udana, jeśli zbrojmistrz wykona Trudny test broni białej. (ręcznej)",
     "Flavor text": "Kiedyś to była kupa śmieci: połamana miotła, spleśniały dywanik, trochę kabla i mały akumulator z żyrohulajnogi. Trochę nad tym posiedziałem. I oto Elektro-żyro-ciskawka. Trochę z tym poćwicz, a rozpieprzysz każdego."
   },
@@ -1499,7 +1499,7 @@
     "ID": "PERK_PLATNERZ",
     "Ruleset": "Gladiator",
     "Name": "Płatnerz",
-    "Requirements": "Profesja Gladiator, Zręczność 12+ Spryt 14+",
+    "Requirements": "Profesja Gladiator, Zręczność 12+, Spryt 14+",
     "Effects description": "Gladiator potrafi stworzyć pancerz z zebranych to tu, to tam części. Czynność trwa na tyle długo, że sztuczkę można wykorzystać tylko poza areną. Gracz ustala z MG wygląd oraz wartość osłony (lekka, ciężka). Pancerz będzie spełniał swoje zadanie jeśli płatnerzowi uda się wykonać Trudny test Sprytu.",
     "Flavor text": "Pokrywy Elektroluksa to ostatni krzyk mody! Z rynny i drutu też da się coś wykombinować. Ale z wełny na pewno nie zrobisz kevlaru, zakład?"
   },
@@ -1819,8 +1819,8 @@
     "ID": "PERK_BLOKTONGA",
     "Ruleset": "Prawo i Sprawiedliwość",
     "Name": "Blok tonfą",
-    "Requirements": "Broń ręczna 3+, Zręczność 9+, tylko przy użyciu tonfy.",
-    "Effects description": "Chwytając tonfę za drugi, poprzeczny uchwyt i układając ją wzdłuż przedramienia, jesteś w stanie wykonywać bloki przeciwko broni białej. Masz z automatu jeden sukces przeciwko atakowi przeciwnika - do tego dochodzą kolejne z testu. Może nie krzywdzisz sukinsyna, ale pełna defensywa pozwoli ci przetrwać aż przybędzie wsparcie.",
+    "Requirements": "Broń ręczna 3+, Zręczność 9+",
+    "Effects description": "Tylko przy użyciu tonfy, chwytając tonfę za drugi, poprzeczny uchwyt i układając ją wzdłuż przedramienia, jesteś w stanie wykonywać bloki przeciwko broni białej. Masz z automatu jeden sukces przeciwko atakowi przeciwnika - do tego dochodzą kolejne z testu. Może nie krzywdzisz sukinsyna, ale pełna defensywa pozwoli ci przetrwać aż przybędzie wsparcie.",
     "Flavor text": "Gdyby nie ten patent, nie miałbym już ręki. Wyleciał na mnie psychol z mieczem, a ja miałem tylko tonfę i mało miejsca. Ani uniknąć, ani nic. No to biorę tonfę za drugi uchwyt, by leżała wzdłuż przedramienia i blokuję cios! Ale się pacjent zdziwił, tak długo to robił, że zdążyłem mu przypieprzyć."
   },
   "PERK_MAKEMYDAYPUNK": {

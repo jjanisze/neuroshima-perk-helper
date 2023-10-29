@@ -12,6 +12,11 @@ var rulesets = [];
 // Global ID to Identifiable lookup table
 var IDLookup = {};
 
+// Global functions
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 // Base database classes
 class Identifiable {
     constructor(data) {
@@ -60,7 +65,6 @@ var attributes = [];
 class Attribute extends Describable {
     constructor(data) {
         super(data);
-        console.log("Added Attribute %s", this.Name);
     }
     
 }
@@ -88,7 +92,6 @@ var specializations = [];
 class Specialization extends Describable {
     constructor(data) {
         super(data);
-        console.log("Added Specialization %s", this.Name);
     }
 }
 function parseSpecializations(data) {
@@ -135,7 +138,6 @@ class Skill extends Describable {
                 this.specialization = spec;
             }
         }
-        console.log("Added Skill %s", this.Name);
     }
     get Attribute() { return this.attribute; }
     get Specialization() { return this.data.specialization; }
@@ -185,7 +187,6 @@ var classes = [];
 class Class extends Describable {
     constructor(data) {
         super(data);
-        console.log("Added Class %s", this.Name);
     }
     get FlavorText() { return this.data["Flavor text"]; }
 }
@@ -198,17 +199,116 @@ function parseClasses(data) {
     console.log("Parsed %d classes", classes.length);
 }
 
+// Parsing regexps
+//numericReq = /^.+\d+\+$/;
 
-class PerkRequirement {
+// Simple numeric req
+const simpleNumeric = /^ *(?<token>[\w ąćęłńóśźż.]*) (?<value>\d+)\+ *$/;
+const stripSpaces = /^ *(?<token>[\w ąćęłńóśźż.]*) *$/;
+
+const OPR_IS = Symbol("IS");
+const OPR_GOR = Symbol(">=");
+
+const RequirementType = {
+    CECHA_STARTOWA:Symbol("cecha startowa"),
+    POCHODZENIE:Symbol("pochodzenie"),
+    PROFESJA:Symbol("profesja"),
+    ATRYBUT:Symbol("atrybut"),
+    UMIEJETNOSC:Symbol("umiejetnosc"),
+    BRAK:Symbol("brak")
+}
+
+class PerkRequirementAtom {
     constructor(text) {
+        // Strip potential :
+        text = text.replace(":", "");
+        this.type = RequirementType.BRAK;
+        this.required = null;
+        this.value = -1;
+        // Attempt to parse as numeric field, ie "pistolety 3+"
+        let result = simpleNumeric.exec(text);
+        if ( result !== null ) {
+            let token = result.groups.token;
+            this.value = result.groups.value;
+            this.parseToken(token);
+           //console.log(`Token ${token}: ${value}`);
+        } else {
+            // Strip trailing and leading spaces
+            result = stripSpaces.exec(text);
+            if( result !== null ) {
+                let token = result.groups.token;
+                // It could be an attribute or skill that's missing a number (using number of last atomic req)
+                
 
+                for( const rqt in RequirementType ) {
+                    let type = RequirementType[rqt];
+                    if ( token.startsWith(type.description) ) {
+                        return;
+                    }
+                }
+            } else {
+                console.log(`Failed to parse ${text}`)
+            }
+        }
+    }
+
+    parseToken(token) {
+        for (var i=0; i<attributes.length; ++i) {
+            var atr = attributes[i];
+            if( token == atr.Name.toLowerCase() ) {
+                this.type = RequirementType.ATRYBUT;
+                this.required = atr;
+                return;
+            }
+        }
+        for (var i=0; i<skills.length; ++i) {
+            var skl = skills[i];
+            if( token == skl.Name.toLowerCase() ) {
+                this.type = RequirementType.UMIEJETNOSC;
+                this.required = skl;
+                return;
+            }
+        }
+        console.log(`Cannot parse token ${token}`);
     }
 }
+
+// Perk requirements are all ANDed
+// Are composed or 1 or more ORed perk requirement atoms
+// ie. PerkRequirement: Mechanika lub Chirurgia 4+ -> Mechanika 4+ Atom OR Chirurgia 4+ Atom
+// PerkRequirement: Mechanika 4+ -> Mechaika 4+ Atom
+// A single 
+class PerkRequirement {
+    constructor(text) {
+        text = text.toLowerCase();
+        text = text.replace("albo", "lub");
+
+        let atomstxt = text.split("lub");
+        atomstxt.reverse();
+        this.atoms = [];
+        for( const atomtxt of atomstxt ) {
+            let atom = new PerkRequirementAtom(atomtxt)
+            this.atoms.push(atom);
+        }
+    }
+}
+
+
+
+
+
 
 var perks = [];
 class Perk extends Describable {
     constructor(data) {
         super(data);
+        this.RequirementsText = data.Requirements;
+        let reqtext = this.data.Requirements.split(",");
+        this.requirements = []
+        for( const req of reqtext) {
+            let requirement = new PerkRequirement(req);
+            this.requirements.push(requirement);
+        }
     }
 }
 
@@ -221,21 +321,45 @@ function parsePerks(data) {
     console.log("Parsed %d perks", perks.length);
 }
 
-/*
-$(document).ready(function() {
-    console.log("A");
-    fetch("perks.json").then(response => response.json()).then(data => {
-        //$("#test").text(data.PERK_ARAMIS.Name);
-        Object.keys(data).forEach(function(key){
-            var item = data[key]
-            console.log(item.Name);
-        });
-    });
-    console.log("B");
-    
-});
+// Character 
 
-*/
+const MALE = Symbol("Mężczyzna");
+const FEMALE = Symbol("Kobieta");
+
+class Character {
+    constructor() {
+        this.attributes = {};
+        for (const attribute of attributes) {
+           this.attributes[attribute.ID] = 0;
+        };
+        this.skills = {};
+        for (const skill of skills) {
+            this.skills[skill.ID] = 0;
+        };
+        this.specialization = specializations[0];
+        this.gender = MALE;
+    }
+
+    randomize() {
+        const that = this;
+        // Attributes
+        Object.keys(this.attributes).forEach(function(key){
+            that.attributes[key] = getRandomInt(6, 18);
+        });
+
+        // Skills
+        Object.keys(this.skills).forEach(function(key){
+            that.skills[key] = getRandomInt(0, 6);
+        });
+    }
+}
+
+function loadChar(char) {
+    merged = Object.assign({}, char.attributes, char.skills );
+    Object.keys(merged).forEach(function(key){
+        $('#'+key).val(merged[key]); 
+    });
+}
 
 const promises = urls.map(url => fetch(url));
 
@@ -255,6 +379,10 @@ $(document).ready(function() {
         constructAttributeHTML();
         constructSpecializationHTML();
         constructSkillHTML();
+        var char = new Character();
+        char.randomize();
+        loadChar(char);
+
     })
     .catch(error => {
         console.error('An error occurred:', error);

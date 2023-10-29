@@ -1,0 +1,28 @@
+div#attributes-container {
+    display: flex;
+    background-color: aqua;
+}
+
+div.attribute-instance {
+    width:100px;
+}
+
+div#specialization-container {
+
+}
+
+div#skills-container {
+    display: flex;
+}
+
+div.skill-attribute-group {
+    width:150px;
+}
+
+div.skill-sub-group {
+
+}
+
+div.skill-item {
+
+}
