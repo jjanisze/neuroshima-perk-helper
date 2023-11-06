@@ -350,29 +350,65 @@
     "GroupName": "Wiedza ogólna",
     "Specialization": "SPEC_TECH"
   },
-  "SKILL_OGOLNIEHUMANISTYCZNE": {
-    "ID": "SKILL_OGOLNIEHUMANISTYCZNE",
+  "SKILL_LITERATURA": {
+    "ID": "SKILL_LITERATURA",
     "Ruleset": "Neuroshima 1.5",
-    "Name": "Historia, Psychologia i Sztuka",
-    "Description": "Znasz historię, psychologię i sztukę.",
+    "Name": "Literatura",
+    "Description": "Olej to!! Powaga! Niepotrzebne!! No, może z wyjątkiem Chemii.",
     "Attribute": "ATR_SPR",
     "GroupName": "Wiedza ogólna",
     "Specialization": "SPEC_TECH"
   },
-  "SKILL_OGOLNIESCISLE": {
-    "ID": "SKILL_OGOLNIESCISLE",
+  "SKILL_JEZYKI": {
+    "ID": "SKILL_JEZYKI",
     "Ruleset": "Neuroshima 1.5",
-    "Name": "Geografia, Fizyka i Matematyka",
-    "Description": "Znasz geografię, fizykę i matematykę.",
+    "Name": "Języki",
+    "Description": "Olej to!! Powaga! Niepotrzebne!! No, może z wyjątkiem Chemii.",
     "Attribute": "ATR_SPR",
     "GroupName": "Wiedza ogólna",
     "Specialization": "SPEC_TECH"
   },
-  "SKILL_OGOLNEBIOCHEMIA": {
-    "ID": "SKILL_OGOLNEBIOCHEMIA",
+  "SKILL_FIZYKA": {
+    "ID": "SKILL_FIZYKA",
     "Ruleset": "Neuroshima 1.5",
-    "Name": "Biologia, Chemia i Chirurgia",
-    "Description": "Znasz biologię, chemię i chirurgie.",
+    "Name": "Fizyka",
+    "Description": "Olej to!! Powaga! Niepotrzebne!! No, może z wyjątkiem Chemii.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_MATEMATYKA": {
+    "ID": "SKILL_MATEMATYKA",
+    "Ruleset": "Neuroshima 1.5",
+    "Name": "Matematyka",
+    "Description": "Olej to!! Powaga! Niepotrzebne!! No, może z wyjątkiem Chemii.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_CHEMIA": {
+    "ID": "SKILL_CHEMIA",
+    "Ruleset": "Neuroshima 1.5",
+    "Name": "Chemia",
+    "Description": "Olej to!! Powaga! Niepotrzebne!! No, może z wyjątkiem Chemii.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_CHIRURGIA": {
+    "ID": "SKILL_CHIRURGIA",
+    "Ruleset": "Neuroshima 1.5",
+    "Name": "Chirurgia",
+    "Description": "Olej to!! Powaga! Niepotrzebne!! No, może z wyjątkiem Chemii.",
+    "Attribute": "ATR_SPR",
+    "GroupName": "Wiedza ogólna",
+    "Specialization": "SPEC_TECH"
+  },
+  "SKILL_PSYCHOLOGIA": {
+    "ID": "SKILL_PSYCHOLOGIA",
+    "Ruleset": "Neuroshima 1.5",
+    "Name": "Psychologia",
+    "Description": "Olej to!! Powaga! Niepotrzebne!! No, może z wyjątkiem Chemii.",
     "Attribute": "ATR_SPR",
     "GroupName": "Wiedza ogólna",
     "Specialization": "SPEC_TECH"
@@ -538,5 +574,32 @@
     "Attribute": "ATR_PER",
     "GroupName": "Przetrwanie",
     "Specialization": "SPEC_RANGER"
+  },
+  "SKILL_STEROWANIE": {
+    "ID": "SKILL_STEROWANIE",
+    "Ruleset": "Piraci",
+    "Name": "Sterowanie",
+    "Description": "Sterowanie to nic innego , jak kierowanie łajbami. Wszystkimi rodzajami jednostek - od Lekkich, po Kolumbryny. Testując tę Umiejętność, omijasz rafy, wykonujesz manewry podczas bitwy morskiej i cumujesz w wyznaczonym miejscu w porcie. W przypadku jednostek Lekkich, zamiast tej Umiejętności możesz wykorzystać Kutry z pakietu Sprzęt. Wszystkie łajby  mają współczynnik Sterowność. Jego wartość dodaje się do Umiejętności Sterowanie Sternika i razem całość odejmuje się od kości podczas testów. Dodanie Sterowania nie powoduje tego, że Sternik otrzymuje Suwak.",
+    "Attribute": null,
+    "GroupName": "Żegluga",
+    "Specialization": "SPEC_TECH, SPEC_RANGER"
+  },
+  "SKILL_NAWIGACJA": {
+    "ID": "SKILL_NAWIGACJA",
+    "Ruleset": "Piraci",
+    "Name": "Nawigacja",
+    "Description": "Umiejętność używana podczas żeglugi morskiej. Z jej pomocą można wyznaczyć kurs statku, określić jego położenie, to znaczy długość i szerokość geograficzną. Przydaje się również podczas odczytywania map morskich i korzystania z notatek sporządzonych przez innych. Nawigacja pozwala korzystać ze skomplikowanych urządzeń, jak również tych najprostszych, jak busola. Z jej znajomością, można również określać położenie patrząc w nocne niebo.",
+    "Attribute": null,
+    "GroupName": "Żegluga",
+    "Specialization": "SPEC_TECH, SPEC_RANGER"
+  },
+  "SKILL_WIEDZAOMORZU": {
+    "ID": "SKILL_WIEDZAOMORZU",
+    "Ruleset": "Piraci",
+    "Name": "Wiedza o morzu",
+    "Description": "Mogłeś ukończyć najlepszą szkołę i urzyć się od najznamienitszych teoretyków pływania, ale nic nie zastąpi praktyki. Dopiero gdy żeglujesz, uczysz się o morzu. Znasz się na rodzajach chmur i wiatrach. Rozpoznajesz ryby i w ogóle morskie rośliny i stworzenia. Oczywiście wiesz, czym się różni fokmaszt od grotmasztu i sterburta od tej drugiej burty.",
+    "Attribute": null,
+    "GroupName": "Żegluga",
+    "Specialization": "SPEC_TECH, SPEC_RANGER"
   }
 }

@@ -28,5 +28,11 @@
     "Ruleset": "Neuroshima 1.5",
     "Name": "Percepcja",
     "Description": "Musisz mieć oczy dookoła glowy. Za każdym rogiem czai się śmierć. Mutanci, ghule, gangersi, wszyscy oni tylko czekają na twój błąd. Chwila nieuwagi i obudzisz się z lufą przystawioną do głowy. Weź mało punktów na Percepcję, a nawet nie zauważysz swojej śmierci. Nie będziesz wiedział. kiedy potrącił cię samochód, kiedy ostrze piły tarczowej przetnie powietrze i wbije ci się w bebechy. Ile punktów?"
+  },
+  "ATR_LUC": {
+    "ID": "ATR_LUC",
+    "Ruleset": "Ołów",
+    "Name": "Szczęście",
+    "Description": "Nowy Współczynnik - Szczęście - losowany jest tylko JEDNĄ kością K20 (w końcu to Szczęście, nie?) i testujesz go w każdej sytuacji, kiedy nie pasuje żaden inny Współczynnik a na wynik zdarzeń nie ma wpływu bohater, tylko trudne do przewidzenia czynniki zewnętrzne. O co chodzi? Cóż, nie wiem, czy wierzysz mało mnie to obchodzi. Faktem natomiast jest to, że niektórych zdarzeń przedwcześnie nie da się przewidzieć, ani zaplanować z góry, podobnie jak niektórzych rzeczy Mistrz Gry nie ustala wcześniej, pozostawiając to radosnej improwizacji. Czy znaleziona w szufladzie opuszczonego domu zapalniczka nadaje się jeszcze do użycia? Ile papierosów miał przy sobie bandyta i czy w ogóle jakieś miał? A może jesteś całkiem szalony i masz ochotę zagrać w ruletkę w Vegas? Nie zawsze fajnie jest zdać się na widzimisię Mistrza Gry, niekiedy to właśnie współczynnik Szczęście uratuje Ci dupę, kiedy znajdziesz się w tarapatach, a kiedy indziej będziesz kląć na Szczęście, bo w piątej, odwiedzonej z rzędu wiosce, nie będzie paliwa."
   }
 }

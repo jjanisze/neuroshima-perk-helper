@@ -1,8 +1,22 @@
+String.prototype.reduceWhiteSpace = function() {
+    return this.replace(/\s+/g, ' ');
+};
+
+String.prototype.stripSpaces = function() {
+    // Strip trailing and leading spaces
+    let result = /^ *(?<token>[\w ąćęłńóśźż.\+]*[\wąćęłńóśźż.\+]) *$/.exec(this);
+    if( result === null ) {
+        console.error(`Unexpected strip space rexegp failure in ${this}`);
+    }
+    return result.groups.token;
+};
+
 const urls = [
     'attribute.json',
     'specialization.json',
     'skill.json',
     'class.json',
+    'origin.json',
     'perk.json',
 ];
 
@@ -59,6 +73,10 @@ class Describable extends Identifiable {
     get Description() { return this.data.Description; }
 }
 
+const Gender = {
+    MEZCZYZNA:Symbol("Mężczyzna"),
+    KOBIETA:Symbol("Kobieta")
+};
 
 // Attributes
 var attributes = [];
@@ -117,17 +135,24 @@ class Skill extends Describable {
     constructor(data) {
         super(data);
 
-        // Validate and cross-reference Attribute
-        if( this.data.Attribute in IDLookup ) {
-            var attr = IDLookup[this.data.Attribute];
-            if( ! attr instanceof Attribute ) {
-                throw Error("For Skill '"+this.Name+"', base Attribute ID '"+this.data.Attribute+"' is not an Attribute");
+        
+        if ( this.data.Attribute ) {
+            // Validate and cross-reference Attribute
+            if( this.data.Attribute in IDLookup ) {
+                var attr = IDLookup[this.data.Attribute];
+                if( ! attr instanceof Attribute ) {
+                    throw Error("For Skill '"+this.Name+"', base Attribute ID '"+this.data.Attribute+"' is not an Attribute");
+                } else {
+                    this.attribute = attr;
+                }
             } else {
-                this.attribute = attr;
+                throw Error("Cannot find ID '"+this.data.Attribute+"'");
             }
         } else {
-            throw Error("Cannot find ID '"+this.data.Attribute+"'");
+            // No associated attribute
+            this.attribute = null;
         }
+        
 
         // Validate and cross-reference Specialization
         if( this.data.Specialization in IDLookup ) {
@@ -139,7 +164,7 @@ class Skill extends Describable {
             }
         }
     }
-    get Attribute() { return this.attribute; }
+    get Attribute() { return this.attribute; } // Nullable!
     get Specialization() { return this.data.specialization; }
     get GroupName() { return this.data.GroupName; }
 }
@@ -147,17 +172,23 @@ function parseSkills(data) {
     Object.keys(data).forEach(function(key){
         var item = data[key];
         var skill = new Skill(item);
+        let sgn = skill.GroupName;
+        
         skills.push(skill);
+        console.log(`skill: ${skill.Name}`);
 
         // Create skills tree
-        if( ! (skill.Attribute.ID in skillsTree)) {
-            skillsTree[skill.Attribute.ID] = {};
+        if( skill.Attribute != null ) {
+            let saID = skill.Attribute.ID;
+            if( !( saID in skillsTree )) {
+                skillsTree[saID] = {};
+            }
+            let skillgroups = skillsTree[saID];
+            if( !( sgn in skillgroups )) {
+                skillgroups[sgn] = [];
+            }
+            skillgroups[sgn].push(skill);
         }
-        skillgroups = skillsTree[skill.Attribute.ID];
-        if( ! (skill.GroupName in skillgroups)) {
-            skillgroups[skill.GroupName] = [];
-        }
-        skillgroups[skill.GroupName].push(skill);
     });
     console.log("Parsed %d skills", skills.length);
 }
@@ -199,77 +230,265 @@ function parseClasses(data) {
     console.log("Parsed %d classes", classes.length);
 }
 
+
+const EffectorType = {
+    BONUS_ATRYBUT:Symbol("bonus atrybut"),
+    BONUS_ATRYBUT_WYBRANY:Symbol("bonus atrybut wybrany"),
+}
+
+class Effector {
+    constructor(type, property, amount) {
+        this.type = type;
+        this.property = property;
+        this.amount = amount;
+    }
+}
+
+
+class Origin extends Describable {
+    constructor(data) {
+        super(data);
+        this.bonuses = this.parseBonus(this.data.Bonus);
+    }
+
+    parseBonus(text) {
+        if( text == null ) {
+            return [];
+        }
+
+        text = text.replace(":" ," ");
+        text = text.reduceWhiteSpace().stripSpaces();
+        let chunks = text.split(" ");
+        if( chunks.length != 2 ) {
+            console.error(`Error parsing origin bonus ${text} - expected 2 parts`);
+            return [];
+        }
+        
+        Origin.buildLookup();
+        for( var key in Origin.table ) {
+            if(chunks[0] == key) {
+                let tuple = Origin.table[key];
+                return [new Effector(tuple[0], tuple[1], 1)];
+            }
+        }
+        console.error(`Unknown origin bonus ${chunks[0]}`);
+        return [];
+    }
+
+    static table = null;
+    static buildLookup() {
+        if( Origin.table != null ) {
+            return;
+        }
+        Origin.table = {};
+        for (let ai=0; ai<attributes.length; ++ai) {
+            let atr = attributes[ai];
+            let str = `${atr.ID}_BONUS`;
+            Origin.table[str] = [EffectorType.BONUS_ATRYBUT, atr] ;
+        }
+        Origin.table["ATR_ANY_BONUS"] = [EffectorType.BONUS_ATRYBUT_WYBRANY, null];
+    }
+    
+}
+
+var origins = [];
+function parseOrigin(data) {
+    Object.keys(data).forEach(function(key){
+        var item = data[key];
+        var org = new Origin(item);
+        origins.push(org);
+    });
+    console.log("Parsed %d origins", origins.length);
+}
+
 // Parsing regexps
 //numericReq = /^.+\d+\+$/;
 
 // Simple numeric req
 const simpleNumeric = /^ *(?<token>[\w ąćęłńóśźż.]*) (?<value>\d+)\+ *$/;
-const stripSpaces = /^ *(?<token>[\w ąćęłńóśźż.]*) *$/;
 
 const OPR_IS = Symbol("IS");
 const OPR_GOR = Symbol(">=");
 
+// For different requirement types, 
 const RequirementType = {
+    // null
     CECHA_STARTOWA:Symbol("cecha startowa"),
+    
+    // origin object
     POCHODZENIE:Symbol("pochodzenie"),
+    
+    // class object
     PROFESJA:Symbol("profesja"),
+
+    // attribute object
     ATRYBUT:Symbol("atrybut"),
-    UMIEJETNOSC:Symbol("umiejetnosc"),
-    BRAK:Symbol("brak")
+
+    // skill object
+    UMIEJETNOSC:Symbol("umiejętność"),
+
+    // group name string
+    UMIEJETNOSC_Z_GRUPY:Symbol("umiejętność z grupy"),
+    
+    // group name string
+    WSZYSTKIE_UMIEJETNOSCI_Z_GRUPY:Symbol("wszystkie umiejętności z grupy"),
+
+    // gender enum
+    PLEC:Symbol("płeć"),
+
+    // null
+    BRAK:Symbol("brak"),
 }
 
 class PerkRequirementAtom {
     constructor(text) {
-        // Strip potential :
-        text = text.replace(":", "");
-        this.type = RequirementType.BRAK;
+        
         this.required = null;
-        this.value = -1;
-        // Attempt to parse as numeric field, ie "pistolety 3+"
-        let result = simpleNumeric.exec(text);
-        if ( result !== null ) {
-            let token = result.groups.token;
-            this.value = result.groups.value;
-            this.parseToken(token);
-           //console.log(`Token ${token}: ${value}`);
-        } else {
-            // Strip trailing and leading spaces
-            result = stripSpaces.exec(text);
-            if( result !== null ) {
-                let token = result.groups.token;
-                // It could be an attribute or skill that's missing a number (using number of last atomic req)
-                
+        
+        this.parsed = false;
+        
+        // Nullable
 
-                for( const rqt in RequirementType ) {
-                    let type = RequirementType[rqt];
-                    if ( token.startsWith(type.description) ) {
+        this.type = RequirementType.BRAK; // LVAL
+        this.selector = null;   // LVAL selector
+        this.value = null;      // RVAL
+
+        // Strip potential :
+        text = text.replace(":", " ");
+        text = text.toLowerCase();
+        text = text.stripSpaces().reduceWhiteSpace();
+        
+
+        // Attempt to parse as numeric field, ie "pistolety 3+"
+        let simplenumeric = simpleNumeric.exec(text);
+        if ( simplenumeric !== null ) {
+            this.value = simplenumeric.groups.value;
+            this.parsed = this.parseToken(simplenumeric.groups.token.stripSpaces());
+            return;
+        } else {
+            // Pochodzenie
+            if(text.startsWith(RequirementType.POCHODZENIE.description)) {
+                text = text.replace(RequirementType.POCHODZENIE.description, "").stripSpaces();
+                this.type = RequirementType.POCHODZENIE;
+                for(let i=0; i<origins.length; ++i) {
+                    let origin = origins[i];
+                    if( origin.Name.toLowerCase() == text ) {
+                        this.value = origin;
+                        this.parsed = true;
                         return;
                     }
                 }
-            } else {
-                console.log(`Failed to parse ${text}`)
+                console.error(`Did not find origin ${text}`);
+                return;
             }
+            if( text == RequirementType.CECHA_STARTOWA.description ) {
+                this.type = RequirementType.CECHA_STARTOWA;
+                return;
+            }
+
+            // Profesja
+            if( text.startsWith(RequirementType.PROFESJA.description)) {
+                text = text.replace(RequirementType.PROFESJA.description, "").stripSpaces();
+                for( let i=0; i<classes.length; ++i) {
+                    let cls = classes[i];
+                    if( cls.Name.toLowerCase() == text ) {
+                        this.type = RequirementType.PROFESJA;
+                        this.value = cls;
+                        return;
+                    }
+                }
+                console.error(`Did not find class ${text}`);
+                return;
+            }
+
+            // Płeć
+            if( text.startsWith(RequirementType.PLEC.description) ) {
+                text = text.replace(RequirementType.PLEC.description, "").stripSpaces();
+                switch(text) {
+                    case Gender.KOBIETA:
+                        this.value = Gender.KOBIETA;
+                        return;
+                    case Gender.MEZCZYZNA:
+                        this.value = Gender.MEZCZYZNA;
+                        break;
+                    default:
+                        console.error("There are only two genders");
+                }
+            }
+
+            // Brak
+            if( text == RequirementType.BRAK.description ) {
+                this.type = 
+            }
+
+            // Number-less skill 
+            // Number-less attribute
+            this.parsed = this.parseToken(text);
+            if( this.parsed ) {
+                return;
+            }
+
+            console.log(`Non-numeric: ${text}`)
         }
+
     }
 
     parseToken(token) {
+        // Try attribute
         for (var i=0; i<attributes.length; ++i) {
             var atr = attributes[i];
-            if( token == atr.Name.toLowerCase() ) {
+            let name = atr.Name.toLowerCase();
+            if( token == name ) {
                 this.type = RequirementType.ATRYBUT;
                 this.required = atr;
-                return;
+                return true;
             }
         }
+
+        // Try skill
         for (var i=0; i<skills.length; ++i) {
             var skl = skills[i];
-            if( token == skl.Name.toLowerCase() ) {
+            let name = skl.Name.toLowerCase();
+            if( token == name ) {
                 this.type = RequirementType.UMIEJETNOSC;
                 this.required = skl;
-                return;
+                return true;
             }
         }
-        console.log(`Cannot parse token ${token}`);
+
+        // Try "umiejętność z grupy" and "wszystkie umiejętności z grupy"
+        if(
+            !this.parseGroupLogic(token, RequirementType.UMIEJETNOSC_Z_GRUPY) &&
+            !this.parseGroupLogic(token, RequirementType.WSZYSTKIE_UMIEJETNOSCI_Z_GRUPY)
+        ) {
+            console.log(`Cannot parse token ${token}`);
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    parseGroupLogic(token, logicType) {
+        if( token.startsWith(logicType.description) ) {
+            token = token.replace(logicType.description, "");
+            token = token.stripSpaces();
+            this.type = logicType;
+            for ( var id in skillsTree ) {
+                let grp = skillsTree[id];
+                for( var grpname in grp ) {
+                    if( token == grpname.toLowerCase()) {
+                        this.group = grp;
+                        return true;
+                    }
+                }
+            }
+            console.error(`Unknown ${logicType.description} ${token}`);
+        }
+        return false;
+    }
+
+    parsePochodzenie(token) {
+
     }
 }
 
@@ -323,8 +542,6 @@ function parsePerks(data) {
 
 // Character 
 
-const MALE = Symbol("Mężczyzna");
-const FEMALE = Symbol("Kobieta");
 
 class Character {
     constructor() {
@@ -373,7 +590,8 @@ $(document).ready(function() {
         parseSpecializations(JSON.parse(data[1]));
         parseSkills(JSON.parse(data[2]));
         parseClasses(JSON.parse(data[3]));
-        parsePerks(JSON.parse(data[4]));
+        parseOrigin(JSON.parse(data[4]));
+        parsePerks(JSON.parse(data[5]));
 
         // Build HTML elements
         constructAttributeHTML();

@@ -443,7 +443,7 @@
     "ID": "PERK_NAUCZYCIEL",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Nauczyciel",
-    "Requirements": "Dowolna wiedza ogólna 4+",
+    "Requirements": "umiejętność z grupy wiedza ogólna 4+",
     "Effects description": "Bohater potrafi przekazywać wiedzę szybko i efektywnie. Może uczyć inne postacie swoich Umiejętności (kosztują wówczas 10% mniej w Punktach Doświadczenia). Poza tym Bohater jest jednym z najmilej widzianych gości w każdej osadzie.",
     "Flavor text": "Jeśli coś potrafisz i jeszcze tego nauczasz - masz parasol ochronny. Żaden wieśniak, na przykład ten, któremu powiedziałeś, jak nastawić żonie wywichnięty bark, albo ten, któremu pomogłeś podłączyć radio bezpośrednio do kabla z prądem, nie pozwoli ci zrobić krzywdy."
   },
@@ -603,7 +603,7 @@
     "ID": "PERK_POSCHODACH",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Po schodach",
-    "Requirements": "Prowadzenie motocykla 3+, Zręczność 12+",
+    "Requirements": "Motocykl 3+, Zręczność 12+",
     "Effects description": "Bohater nie otrzymuje utrudnień do prowadzenia motocykla podczas jazdy wewnątrz budynków (po korytarzach, czy schodach.)",
     "Flavor text": "Puszczasz sprzęgło i w drogę. Ja tak często jeżdżę, a bo to mało razy winda się spieprzyła? Miałem na nogach wchodzić?! Na piąte piętro?!"
   },
@@ -619,7 +619,7 @@
     "ID": "PERK_POLOZENIEMOTOCYKLA",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Położenie motocykla",
-    "Requirements": "Prowadzenie motocykla 6+, Zręczność 12+",
+    "Requirements": "Motocykl 6+, Zręczność 12+",
     "Effects description": "Bohater w pełnej szybkości kładzie motor; przejeżdża nisko pod przeszkodą, a po jej minięciu stawia motor i jedzie dalej.",
     "Flavor text": "Pierwszy raz w życiu widziałem coś takiego. Facet wjechał na motorze pod pędzącą ciężarówkę, wyjechał z drugiej strony i po trzech minutach ciężarówka wybuchła..."
   },
@@ -643,7 +643,7 @@
     "ID": "PERK_RODEO",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Rodeo",
-    "Requirements": "Ujeżdżanie 5+, Jazda konna 3+",
+    "Requirements": "Ujeżdżanie 5+, Jazda konno 3+",
     "Effects description": "Jeśli MG stwierdzi, że dane stworzenie da się ujeździć za pomocą testu najwyżej Bardzo Trudnego (po zastosowaniu Suwaka!), to znaczy, że ty nie musisz testować w ogóle. Wsiadasz i jedziesz, stary, jak samochodem.",
     "Flavor text": "Ha ha! Wypakowałeś tę idiotyczną Umiejętność na 5+? No to odbierz prezent! Sztuczka do wykupienia, a mikser gratis. Niech Ci MG kupi."
   },
@@ -913,9 +913,9 @@
   },
   "PERK_WRACAJACYBUMERANG": {
     "ID": "PERK_WRACAJACYBUMERANG",
-    "Ruleset": "Neuroshima Edycja 1.5",
+    "Ruleset": "XZG",
     "Name": "Wracający bumerang",
-    "Requirements": "Bumerang 4+, Zręczność 12+",
+    "Requirements": "Rzucanie 4+, Zręczność 12+",
     "Effects description": "Bohater potrafi tak rzucać bumerangiem, że ten wraca po trafieniu w cel i można go złapać.",
     "Flavor text": "Kupiłem kiedyś bumerang. To było oszustwo stulecia. Od trzech lat szukam tego gościa, który mi to wcisnął i w końcu gdzieś go spotkam. Najpierw handlarz rzucał bumerangiem, pokazywał, jakie to sprytne, jak wraca, gdy się rzuci... Kupiłem urządzenie za furę fajek, facet się szybko zwinął, a ja zostałem z tym cholerstwem. Głupi kij. Nigdy do mnie nie wrócił. Rzucałem nim ze sto razy - leciał w krzaki i nic. W końcu wywaliłem ten bumerang w jakiś kanion. Mam nadzieję, że się chociaż połamał."
   },
@@ -1147,7 +1147,7 @@
     "ID": "PERK_SZLACHETNIEURODZONY",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Szlachetnie urodzony",
-    "Requirements": "Pochodzenie: Federacja Apallachów, Cecha startowa",
+    "Requirements": "Pochodzenie: Federacja Appalachów, Cecha startowa",
     "Effects description": "Wybierz sobie jeden pakiet Umiejętności opartych o Charakter. Każdą z Umiejętności w pakiecie posiadasz na poziomie +2",
     "Flavor text": "Urodziłeś się, by panować nad innymi. Wiesz jak traktować ludzi."
   },
@@ -1155,7 +1155,7 @@
     "ID": "PERK_POJEDYNKOWICZ",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Pojedynkowicz",
-    "Requirements": "Pochodzenie: Federacja Apallachów, Cecha startowa",
+    "Requirements": "Pochodzenie: Federacja Appalachów, Cecha startowa",
     "Effects description": "Podczas walki sam na sam ignorujesz pierwszą Lekką ranę lub Draśnięcie. Żaden przeciwnik nie zdoła cię przeraxić. I dlatego właśnie jesteś twardzielem.",
     "Flavor text": "Nigdy nie przepuściłeś okazji, by zmierzyć się z przeciwnikiem. Dawałeś wrogom nauczkę i sam się czegoś nauczyłeś. Najważniejsza nauka, jaką wyciągnąłeś, to ta, iż każdego można pokonać"
   },
@@ -1163,7 +1163,7 @@
     "ID": "PERK_WYCHUCHANASPLUWA",
     "Ruleset": "Neuroshima Edycja 1.5",
     "Name": "Wychuchana spluwa",
-    "Requirements": "Pochodzenie: Federacja Apallachów, Cecha startowa",
+    "Requirements": "Pochodzenie: Federacja Appalachów, Cecha startowa",
     "Effects description": "Wybierz jedną z broni palnych, które nosisz przy sobie. Każdego wieczoru czyścisz ją, chuchasz, dmuchasz i w efekcie możesz dla niej zawsze powtórzyć rzut na efekt zacięcia się broni/",
     "Flavor text": null
   },
@@ -1315,7 +1315,7 @@
     "ID": "PERK_MOTOFLIRT",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Moto-flirt",
-    "Requirements": "Pochodzenie: Federacja Appallachów, Cecha Startowa",
+    "Requirements": "Pochodzenie: Federacja Appalachów, Cecha Startowa",
     "Effects description": "Ale z drugiej strony - przychodzisz do laseczki, która pilotuje bryczkę przeciwników i mówisz: \"Szkoda.że tak rzadko uśmiecha się pani do drzew. Częściej by zakwitały.\". Masz pewność, Że dziewczyna nie skoncentruje slę w czasie jazdy na przeszkodach. Dodaj sobie •1 do Charakteru, gdy rozmawiasz o samochodach z osobami przeciwnej płci. z dowolną umiejętnością Prowadzenie lub Technika na poziomie 4 lub większym.",
     "Flavor text": "Może i jesteś dziwakiem, bo w końcu pochodzisz z krainy dziwaków. Może i śmieją się z ciebie, gdy tylko otworzysz usta, bo w końcu jak palniesz \"Szanowni panowie raczą opuścić broń, jesteśmy cywilizowani, dogadamy się jak ludzie honoru\"... To nie jest dobra odzywka do grupy uzbrojonych po zęby gangersów z konkurencyjnego zespołu."
   },
@@ -1323,7 +1323,7 @@
     "ID": "PERK_POPIACHUNAJLEPIEJ",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Po piachu najlepiej",
-    "Requirements": "Pochodzenie: Matka Pustynia, Cecha Startowa",
+    "Requirements": "Pochodzenie: Człowiek Pustyni, Cecha Startowa",
     "Effects description": "Ty jesteś zmotoryzowanym dzikusem. Potrafisz przygotować samochód do jazdy i poprowadzić go w taki sposob, że wszelkie utrudnienia wynikające ze złej nawierzchni (np.mokrej lub piaszczystej) dzieli się na pól. Dotyczy to także pobocza w wyścigach.",
     "Flavor text": "Jeżeli pochodzisz z pustyni, to pewnie nie masz zbyt wielkiego doświadczenia w naprawianiu samochodów, ale z całą pewnością znasz się na pracy w terenie. Materiał na dobrego pilota do crossów, jak mawiają o takich jak ty. W długodystansowych rajdach znakomicie radzisz sobie z wytyczaniem kierunku i zdobywaniem żywności oraz wody. Zresztą, nie oszukujmy się, to potrafi każdy dzikus."
   },
@@ -1395,7 +1395,7 @@
     "ID": "PERK_DWURECZNOSC",
     "Ruleset": "Gladiator",
     "Name": "Dwuręczność",
-    "Requirements": "Zręczność 14+, Broń biała 5+",
+    "Requirements": "Zręczność 14+, Broń ręczna 5+",
     "Effects description": "Można władać dwiema brońmi naraz. Dzięki temu masz 4 segmenty w rundzie zamiast standardowych trzech, pod warunkiem, że w danej rundzie używasz obydwu broni. Ponadto akcje przeprowadzane tą drugą bronią są utrudnione dodatkowo o 40%",
     "Flavor text": "Po to masz dwie ręce, żeby walić wroga po mordzie obiema. Wiesz, do jednej młotek, do drugiej pałę i machasz jak śmigłowiec."
   },
@@ -1475,7 +1475,7 @@
     "ID": "PERK_ZORRO",
     "Ruleset": "Gladiator",
     "Name": "Zorro",
-    "Requirements": "Profesja: Gladiator, Broń ręczna lub Sztuki walki 3+",
+    "Requirements": "Profesja Gladiator, Broń ręczna lub Sztuki walki 3+",
     "Effects description": "Tę sztuczkę należy wykupić oddzielnie dla każdej broni. Dzięki niej gladiator obniża PT ataku o 10% w wybranym orężu.",
     "Flavor text": "Zorro to był gość, który potrafiłby wyciąć szpadą swoją ksywkę na twoim ubranku."
   },
@@ -1699,7 +1699,7 @@
     "ID": "PERK_JESTEMJEDNYMZWAS",
     "Ruleset": "Łowca Mutantów & Zabójca Maszyn",
     "Name": "Jestem jednym z was",
-    "Requirements": "Percepcja 12+, Dowolna Umiejętność z pakietu Kamuflaż 5+",
+    "Requirements": "Percepcja 12+, umiejętność z grupy Kamuflaż 5+",
     "Effects description": "Bohater potrafi zamaskować swóch zapach, chcąc podejść dzikie zwierzę lub mutka. Po natarciu się specyfikami traktowany jest przez bestie jak jedna z nich. Sztuczka oszukuje tylko węch bestii - nie działa na inne zmysły.",
     "Flavor text": "Jeżeli chcesz podejść mutka albo dzikie zwierzę, musisz natrzeć się wydzielinami ciała, jakiegoś przedstawiciela tego samego gatunku. Jeżeli zrobisz to dobrze, nie wyczuje on ludzkiego smrodu i nie ucieknie. Przestań się wreszcie krzywić! Nie podoba się?! To zmień profesję!"
   },
@@ -1867,7 +1867,7 @@
     "ID": "PERK_BLOKADA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Blokada",
-    "Requirements": "Charakter 10+, Spryt 14+, Prowadzenie Pojazdów 6+",
+    "Requirements": "Charakter 10+, Spryt 14+, Umiejętność z grupy Prowadzenie Pojazdów 6+",
     "Effects description": "Pozwala na odcinku prostej zablokować kierownicę i jadąc z ustaloną prędkością wykonać jedną akcję bez żadnych modyfikatorów ujemnych. Wszystkie testy PP wykonują tak, jakby siedział za kierownicą i prowadził.",
     "Flavor text": "Możesz nie wierzyć, ale Cloody tak czasem robi. Mawiają: \"Pojeździsz, zobaczysz, zbaraniejesz.\" Ma taką wajchę blokady kierownicy, gaz blokuje szpilkami, a sama tarabani się na tylne siedzenie do torebki po szminkę. A torebkę, jak to kobieta, pełną ma wszystkiego, więc nim odnajdzie co trzeba..."
   },
@@ -1875,7 +1875,7 @@
     "ID": "PERK_CARMAGEDDON",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Carmageddon",
-    "Requirements": "Charakter 14+, Prowadzenie pojazdów 7+",
+    "Requirements": "Charakter 14+, Umiejętność z grupy Prowadzenie pojazdów 7+",
     "Effects description": "Jeżeli twój test taranowania powiedzie się, taranowany nie może uniknąć ataku.",
     "Flavor text": "<Trzask pękającego metalu>"
   },
@@ -1907,7 +1907,7 @@
     "ID": "PERK_LUSTERKA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Lusterka",
-    "Requirements": "Charakter 10+, Zręczność 12+, PP 4+",
+    "Requirements": "Charakter 10+, Zręczność 12+, Umiejętność z grupy Prowadzenie Pojazdów 4+",
     "Effects description": "Kierowca potrafi wyprzedzać innych rajdowców na przewężeniach, bez konieczności zjeżdżania na pobocze i bez ryzyka uszkodzeń.",
     "Flavor text": "Mike tak miał, pamiętam, że nawet wykręcił sobie lusterka, bo mu zawadzały, jak w bramy wjeżdżał. Wiesz nie skłamię jak powiem, że potrafił zmieścić się w bramy węższe od bryki. Taa, ja też wcześniej byłem przekonany że to niemożliwe..."
   },
@@ -1955,7 +1955,7 @@
     "ID": "PERK_PODKONTROLA",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Pod kontrolą",
-    "Requirements": "Charakter 12+, PP 6+",
+    "Requirements": "Charakter 12+, Umiejętność z grupy Prowadzenie Pojazdów 6+",
     "Effects description": "Po uderzeniu w Offroad bryka nie traci prędkości, jeśli kierowca zda Bardzo Trudny test PP oparty na Charakterze.",
     "Flavor text": "No więc widzę, że nie mamy już szans i zaraz przydupczymy w tę kamienicę. Drę się do niego, że przed nami mur, a on mi \"Przecież widzę\" i huknął bokiem tak, że mi wszystkie plomby wyskoczyły. I wiesz, odbiło nas od tej ściany jak z katapulty, zamiast się rozkraczyć, przyspieszyliśmy, psia krew. Tyle, że sobie karoserię zarysował..."
   },
@@ -1963,7 +1963,7 @@
     "ID": "PERK_PROWADZENIENASCHYLONEGO",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Prowadzenie na schylonego",
-    "Requirements": "Charakter 12+, PP 6+",
+    "Requirements": "Charakter 12+, Umiejętność z grupy Prowadzenie Pojazdów 6+",
     "Effects description": "Potrafisz tak ukryć się w samochodzie, tak, że z zewnątrz widać tylko twoją głowę. Zapewnia to osłonę przed ostrzałem, a ty, kierując, nie otrzymujesz żadnych utrudnień. Normalnie MG doliczyłby utrudnienie +30%",
     "Flavor text": "Wszyscy turyści brali ten wóz za samochód - widmo. Tylko miejscowi wiedzieli, że on zawsze jeździ schylony. Prowadził samochody od maleńkości - chyba się przyzwyczaił."
   },
@@ -1979,7 +1979,7 @@
     "ID": "PERK_STEVEWONDER",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Steve Wonder",
-    "Requirements": "Spryt 10+, Charakter 10+, Wyczucie emocji 3+",
+    "Requirements": "Spryt 10+, Charakter 10+, Postrzeganie emocji 3+",
     "Effects description": "Kierowca automatycznie zdaje test Reputacji na starcie. Za każdym razem bohater musi wymyślić inny sposób na zdobycie poklasku publiczności.",
     "Flavor text": "Facet zakładał okulary przeciwsłoneczne i zaczynał się drzeć przez megafon, że nic nie widzi i że prosi o pomoc publiczności. No powiem ci, widownia go kochała. Setki osób wydzierały się na cały głos: \"Hoopa, ciąć, prawo, ostry...\""
   },
@@ -1987,7 +1987,7 @@
     "ID": "PERK_TANGOILESZCZ",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Tango i Leszcz",
-    "Requirements": "Zręczność 12+, PP 8+",
+    "Requirements": "Zręczność 12+, Umiejętność z grupy Prowadzenie Pojazdów 8+",
     "Effects description": "Kierowca obraca wóz o 360 stopni, a w trakcie obrotu wykonuje strzał. Żadna z tych akcji nie wiąże się z utrudnieniami wynikającymi z wykonania dwóch działań w rundzie, ale wszystkie inne utrudnienia (np. za odległość) dolicza się w normalny sposób.",
     "Flavor text": "Facet siedział na zderzaku i strzelał. Siwy złamał wóz, obrócił go w pełnym pędzie o 180 stopni, wypalił do palanta trzy pociski prosto w prawą oponę i ponownie obrócił się o 180. Takie rzeczy wcześniej widziałem tylko na jakimś filmie z jazdą figurową na lodzie."
   },
@@ -2011,7 +2011,7 @@
     "ID": "PERK_WITHORWITHOUTYOU",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "With or without you!",
-    "Requirements": "Spryt 16+, Percepcja 14+, PP 6+",
+    "Requirements": "Spryt 16+, Percepcja 14+, Umiejętność z grupy Prowadzenie Pojazdów 6+",
     "Effects description": "Bohater może pełnić jednocześnie funkcję kierowcy i pilota.",
     "Flavor text": "Tego ranka byłem mocno rozdrażniony, więc pytam spokojnie: \"Wsiadasz czy nie?\". A on mi się zwymiotował na buty, alkoholik pieprzony. Wsiadłem sam, pojechałem, wygrałem. Bez pilota. Do dziś mam zdjęcie w Cylindrach."
   },
@@ -2027,7 +2027,7 @@
     "ID": "PERK_ZNIKAJACYPUNKT",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Znikający punkt",
-    "Requirements": "dowolna umiejętność z grupy Prowadzenie pojazdów 5+, Mechanika 5+, Fizyka 2+",
+    "Requirements": "umiejętność z grupy Prowadzenie pojazdów 5+, Mechanika 5+, Fizyka 2+",
     "Effects description": "Masz szczególne wyczucie samochodów - dobrze poznałeś możliwości poszczególnych aut. Za każdym razem, gdy próbujesz zwiększyć prędkość samochodu ponad prędkość maksymalną, nie zmniejsza się sprawność wozu.",
     "Flavor text": "Facet krzyknął \"Warp 5\" - czy coś takiego - i tyle go widzieliśmy."
   },
@@ -2035,7 +2035,7 @@
     "ID": "PERK_ZOLW",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Żółw",
-    "Requirements": "Charakter 12+, Spryt 14+, PP 6+",
+    "Requirements": "Charakter 12+, Spryt 14+, umiejętność z grupy Prowadzenie Pojazdów 6+",
     "Effects description": "Bohatera o wiele trudniej staranować, bo doskonale się zastawia i tak manewruje bryką, że trudno go trafić i zepchnąć z trasy. Taranujący otrzymuje dodatkowy modyfikator +40% do testu PP.",
     "Flavor text": "Młody podchodzi do mnie i mówi \"Mówcie na mnie Żółw\". No to ja sobie myślę, oho, niezła ksywka dla rajdowca. A on uśmiecha się i dodaje: \"Bo wiecie, mnie to się nie da ruszyć na trasie. Jak żółwia\" Ni diabła do dziś nie wiem o co mu dokładnie chodziło."
   },
@@ -2091,7 +2091,7 @@
     "ID": "PERK_LATAJACYHOLENDER",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Latający Holender",
-    "Requirements": "Prowadzenie pojazdów 5+, Mechanika 3+",
+    "Requirements": "umiejętność z grupy Prowadzenie pojazdów 5+, Mechanika 3+",
     "Effects description": "Nawet jeżeli Sprawność samochodu spadła do 0, potrafisz zmusić wóz do dalszej jazdy. Auto przejedzie jeszcze tyle kilometrów, ile wynosi suma twoich umiejętności Mechanika i Prowadzenie Pojazdów. Potem zdechnie definitywnie. Prędkość samochodu oscyluje pomiędzy zerem a pięcioma kilometrami na godzinę.",
     "Flavor text": "Zobaczyliśmy paskudny wrak samochodu, normalnie według praw fizyki coś takiego nie miałoby prawa jeździć. Ale tamten wrak toczył się na trzech kołach - wolno, jednak przed siebie. Nic tylko splunąć i uciekać."
   },
@@ -2115,7 +2115,7 @@
     "ID": "PERK_ZNAWCASAMOCHODOW",
     "Ruleset": "Neuroshima Wyscig",
     "Name": "Znawca samochodów",
-    "Requirements": "Wszystkie umiejętności z grupy Prowadzenie pojazdów 4+, Mechanika 4+, Elektronika 2+",
+    "Requirements": "wszystkie umiejętności z grupy Prowadzenie pojazdów 4+, Mechanika 4+, Elektronika 2+",
     "Effects description": "Rozpoznajesz wszystkie parametry samochodu (takie jak zwrotność, wytrzymałość, maksymalna prędkość). Wystarczy, że poobserwujesz jak bryka jeździ, wsłuchasz się w warkot silnika i MG śpiewa jak na spowiedzi. Jeżeli jeszcze masz okazję zajrzeć pod maskę sprawa jest jasna. Powinieneś jeszcze zdać test Mechaniki, a poziom trudności ustali Ci prowadzący (bazowo test Bardzo Trudny)",
     "Flavor text": "Prawdziwy koneser samochodów zawiązuje sobie oczy, podchodzi do auta, wyciąga rurkę i zasysa trochę paliwa. Potem bada bukiet, wypluwa wszystko do pojemniczka i mówi \"Pontiac. Srebrny z 1972 roku. Mały przebieg, świece do wymiany.\""
   },
@@ -2507,7 +2507,7 @@
     "ID": "PERK_GPS",
     "Ruleset": "Ołów",
     "Name": "GPS",
-    "Requirements": "Orientacja w terenie 4+, Spryt 13+",
+    "Requirements": "umiejętność z grupy Orientacja w terenie 4+, Spryt 13+",
     "Effects description": "Jeśli spędzisz w jakimś miejscu ponad godzinę czasu, to potem testy związane z ustaleniem położenia tego miejsca i odległości od niego masz o 1 stopień łatwiejsze, co nie zabrania Ci użyć jeszcze dodatkowo Suwaka.",
     "Flavor text": "Znałem kiedyś jednego trapera, który miał niezwykłą umiejętność. Mówiono nawet, że miał zmutowany zmysł orientacji, co było możliwe. Wyobraź sobie, że mogłeś zawiązać mu oczy, wsadzić do bagażnika samochodu, wywieźć 100 mil w głąb Gór Skalistych i rozwiązać, a ten koleś potrafiłby Ci po chwili zastanowienia powiedzieć, w którym kierunku jest miejsce, skąd wyjechaliście i podać przybliżony dystans w milach! A co gorsza, gdy spojrzałem na licznik samochodu, dystans się mniej-więcej zgadzał..."
   },
@@ -2547,7 +2547,7 @@
     "ID": "PERK_LETAMBEDEZYL",
     "Ruleset": "Ołów",
     "Name": "Łe tam! Będę żył...",
-    "Requirements": "Wiedza medyczna 4+",
+    "Requirements": "umiejętność z grupy Medycyna 4+",
     "Effects description": "Jeśli otrzymasz ranę, możesz rzucić sobie test Wiedzy medycznej (Łatwy dla rąk i nóg, Trudny dla brzucha i klatki piersiowej, Bardzo trudny dla głowy i szyi). Jeśli zdasz i okaże się, że nie oberwałeś w żaden żywotny narząd, ani tętnicę (MG musi ujawnić ci wynik rzutu k20 na skutki ran), możesz obniżyć sobie Utrudnienia od rany o POŁOWĘ, tak, jakbyś zdał test Odporności na ból.",
     "Flavor text": "Weterani z Frontu są zadziwiający. Gdy zwykły frajer dostanie kulkę, pada na glebę, jęczy, krzyczy, albo płacze, w najlepszym wypadku traci przytomność i jest z nim spokój. Tymczasem frontowcy tylko się skrzywią, obejrzą ranę, posmakują krwi i stwierdzą nagle: \"to nie jest śmiertelna rana\", wstają potem i walczą dalej, jakby wcale nie oberwali..."
   },
