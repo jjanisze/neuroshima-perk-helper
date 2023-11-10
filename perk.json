@@ -1411,7 +1411,7 @@
     "ID": "PERK_OBURECZNOSC",
     "Ruleset": "Gladiator",
     "Name": "Oburęczność",
-    "Requirements": "Zręczność 14+, Broń ręczna lub Sztuki walki 3+",
+    "Requirements": "Zręczność 14+, Broń ręczna lub umiejętność z grupy Sztuki walki 3+",
     "Effects description": "Niezależnie od tego, w której ręce trzyma się oręż, nie dostaje się karnego modyfikatora za używanie niewyćwiczonej ręki.",
     "Flavor text": "Lewa, prawa - bez różnicy"
   },
@@ -1419,7 +1419,7 @@
     "ID": "PERK_SALTO",
     "Ruleset": "Gladiator",
     "Name": "Salto",
-    "Requirements": "Zręczność 15+ lub Sztuki walki 5+",
+    "Requirements": "Zręczność 15+ lub umiejętność z grupy Sztuki walki 5+",
     "Effects description": "W efektowny sposób można zastosować zasady odskakiwania (poprzez salta, przewrotki i inne cuda). Przeciwnik nie zdobywa automatycznie Inicjatywy, lecz wykonuje się test Inicjatywy.",
     "Flavor text": "Koleś był niesamowity. Doskakiwał do przeciwnika, żeby zadać mu cios i w jednej chwili był parę kroków od niego. Czy to z użyciem rąk, czy to odbijając się od ściany, zachowywał się, jakby przyciąganie na niego nie działało."
   },
@@ -1427,7 +1427,7 @@
     "ID": "PERK_SZARZA",
     "Ruleset": "Gladiator",
     "Name": "Szarża",
-    "Requirements": "Broń ręczna lub Sztuki walki lub Bijatyka 3+",
+    "Requirements": "Broń ręczna lub umiejętność z grupy Sztuki walki lub Bijatyka 3+",
     "Effects description": "Możesz wykonać szarżę w połączeniu z każdym typem ataku wręcz lub bronią białą. W jej efekcie PT ataku obniża się o 30%, lecz w turze przeciwnika nie będzie można wykonywać uników.",
     "Flavor text": "Nie zawsze jest czas na przydługawe pojedynki, co nie? Zupa stygnie, a kolo co chwila odskakuje, łazi z miejsca w miejsce i nie chce się porządnie bić jak człowiek. Mamy na takiego sposób. Szarża ... i idziesz dokończyć zupę."
   },
@@ -1451,7 +1451,7 @@
     "ID": "PERK_ATOMOWEUDERZENIE",
     "Ruleset": "Gladiator",
     "Name": "Atomowe Uderzenie",
-    "Requirements": "Profesja Gladiator, Budowa 16+, Bijatyka lub Sztuki walki lub Broń ręczna 7+",
+    "Requirements": "Profesja Gladiator, Budowa 16+, Bijatyka lub umiejętność z grupy Sztuki walki lub Broń ręczna 7+",
     "Effects description": "Gladiator skupia całą swą energię na zadanie najmocniejszego ciosu gołymi rękoma bądź daną bronią. Atak zajmuje całą rundę, w czasie której zawodnik wykonuje skomplikowany \"taniec\". W tym czasie przeciwnik może atakować z utrudnieniem 10%, przy czym na zablokowanie atomowego uderzenia (także z 10% utrudnieniem) może poświęcić tylko jeden segment. Udany atak zadaje krytyczne obrażenie. Nie można wykonać AU w tłoku, w ciasnych pomieszczeniach, będąc pochwyconym, przewróconym ani też, gdy sami kogoś trzymamy lub obezwładniamy.",
     "Flavor text": "Nie wiem, jak on to robi. W pewnym momencie skupia w sobie całą energię, cały zapas sił i daje temu ujście w przedziwnym tańcu, w czasie którego wymachuje na wszystkie strony. Jeśli nie zatrzymasz takiego wariata w odpowiednim momencie, zostaje z ciebie sito."
   },
@@ -1475,7 +1475,7 @@
     "ID": "PERK_ZORRO",
     "Ruleset": "Gladiator",
     "Name": "Zorro",
-    "Requirements": "Profesja Gladiator, Broń ręczna lub Sztuki walki 3+",
+    "Requirements": "Profesja Gladiator, Broń ręczna lub umiejętność z grupy Sztuki walki 3+",
     "Effects description": "Tę sztuczkę należy wykupić oddzielnie dla każdej broni. Dzięki niej gladiator obniża PT ataku o 10% w wybranym orężu.",
     "Flavor text": "Zorro to był gość, który potrafiłby wyciąć szpadą swoją ksywkę na twoim ubranku."
   },
@@ -2451,7 +2451,7 @@
     "ID": "PERK_CHLOPAKDOBICIA",
     "Ruleset": "Ołów",
     "Name": "Chłopak do bicia",
-    "Requirements": "Bijatyka 4+, Charakter 14+, Budowa mniejsza niż 11",
+    "Requirements": "Bijatyka 4+, Charakter 14+, Budowa 10-",
     "Effects description": "Gdy bijesz się wręcz, przez pierwsze dwie rundy tylko się bronisz i udajesz generalnie posranego. Jeśli oberwiesz, to musisz zdać test Odporności na ból. Potem, przeciwników, którzy myślą, że jesteś ciotą, nagle i boleśnie wyprowadzasz z błędu. Następne cztery rundy każdy twój atak, który się powiedzie, jest natychmiastowym nokautem - powoduje utratę przytomności, ogłuszenie, lub bardzo bolesne rozbrojenie - zależnie od decyzji MG. Jeśli tymi trzema atakami wykluczysz co najmniej połowę napastników, pozostali muszą zdać Przeciętny, Trudny, lub Bardzo Trudny test Morale, aby nie zwiać. Inaczej masz przesrane...",
     "Flavor text": "Danny to strasznie zaczepny gość. Siedzieliśmy raz w Mieście Aniołów w jakimś barze i sączyliśmy sobie spokojnie lokalne, ciemne piwko. No i oczywiście, musiały przyjść kłopoty. Przyszły, pod postacią czwórki opalonych drabów o wyglądzie totalnych kretynów. Wymyślili sobie, że stolik, przy którym usiadłem z Dannym, należy do nich. Na to Danny, który jest bardzo bezpośredni i zaczepny, jak już mówiłem, wypalił \"spierdalać\". No to Ci wywlekli go za szmaty na środek. Zanim zdążyłem wyciągnąć swoją klamkę, Danny oberwał już parę razy. Dostał raz, drugi po ryju, ich herszt kopnął go i pchnął na bar. Gdy miałem już gnata w ręce, nagle Danny odbił się od baru i uderzył na nich jak błyskawica. Ich szef runął na ziemię ze zmiażdżonym nosem, potem wielkolud z łańcuchem oberwał drewnianym stołkiem w ucho tak, że aż się zakręcił w kółko zanim upadł. Pozostali dwaj nie czekali na swoją kolej, tylko wyskoczyli przez okno. Nawet nie zdążyłem przeładować pistoletu... Kurde, nawet ja nie wiedziałem, że Danny bije się aż tak dobrze."
   },
@@ -2603,7 +2603,7 @@
     "ID": "PERK_NIEPOZORNYKOLES",
     "Ruleset": "Ołów",
     "Name": "Niepozorny koleś",
-    "Requirements": "Blef 3+, Budowa mniejsza niż 13",
+    "Requirements": "Blef 3+, Budowa 12-",
     "Effects description": "Umiesz zmylić swym wyglądem i zachowaniem innych, tak, że nie zwrócą na Ciebie uwagi w tłumie. Wypatrzenie Cię w tłumie ludzi jest o 1 stopień trudniejsze.  Ponadto PT wszystkich testów Czujności przeciwko Tobie wzrasta o 1, bo przeciwnik nie spodziewa się po Tobie, że możesz być groźny. Dlatego też, automatycznie wygrywasz pierwszy test Inicjatywy w walce.",
     "Flavor text": "- Zejdź mi z drogi, obszarpany kurduplu!\r\nJEBS! KRACH! TRZASK! AŁAAA!\r\n- Nie nazywaj mnie nigdy więcej obszarpanym kurduplem!"
   },
@@ -2619,7 +2619,7 @@
     "ID": "PERK_ODRUCHAUTOMATYCZNY",
     "Ruleset": "Ołów",
     "Name": "Odruch automatyczny",
-    "Requirements": "Dziesiątki, setki powtórzeń jakiejś reakcji",
+    "Requirements": "Dziesiątki czy setki powtórzeń jakiejś reakcji",
     "Effects description": "Możesz wyuczyć się bezbłędnej reakcji na jakiś jeden, określony bodziec, który wcześniej ustalisz. Bodźcem warunkowym może być na przykład odgłos wystrzału, błysk sztyletu w ręku rozmówcy, poczucie ręki na ramieniu. Odruchem wyuczonym może być na przykład upadnięcie na ziemię, dobycie noża, błyskawiczny obrót i cios pięścią, schylenie się... Gdy wykonujesz odruch warunkowy, masz ZAWSZE Łatwy test odpowiedniej umiejętności albo cechy. Ponadto odruch warunkowy wykonuje się automatycznie, nawet jeśli zostaniesz zaskoczony. Wyćwiczenie jednego odruchu automatycznego trwa bardzo długo i wymaga wielokrotnych powtórzeń.",
     "Flavor text": "Podróżowałem kiedyś z facetem, który zachowywał się tak, jakby kierował nim jakiś przeklęty instynkt. Facet reagował bezbłędnie, zawsze miał gotowy schemat działania, gdy coś się wydarzyło. Ale wiesz co? Odechciało mi się z nim jeździć, gdy któregoś razu ten psychol obezwładnił właściciela baru, bo dostrzegł nagle w jego ręku nóż nie owinięty w serwetkę..."
   },

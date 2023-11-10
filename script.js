@@ -4,11 +4,15 @@ String.prototype.reduceWhiteSpace = function() {
 
 String.prototype.stripSpaces = function() {
     // Strip trailing and leading spaces
-    let result = /^ *(?<token>[\w ąćęłńóśźż.\+]*[\wąćęłńóśźż.\+]) *$/.exec(this);
+    let result = /^ *(?<token>[\w ąćęłńóśźż.\+-]*[\wąćęłńóśźż.\+-]) *$/.exec(this);
     if( result === null ) {
         console.error(`Unexpected strip space rexegp failure in ${this}`);
     }
     return result.groups.token;
+};
+
+Array.prototype.getRandom = function() {
+    return this[Math.floor( Math.random() * this.length ) ];
 };
 
 const urls = [
@@ -123,7 +127,7 @@ function parseSpecializations(data) {
 function constructSpecializationHTML() {
     for (var i=0; i<specializations.length; ++i) {
         var spe = specializations[i];
-        var html = '<option value="'+spe.ID+'">'+spe.Name+'</option>';
+        var html = '<option value="'+spe.Name+'">'+spe.Name+'</option>';
         $('#specialization-selector').append(html);
     }
 }
@@ -155,12 +159,21 @@ class Skill extends Describable {
         
 
         // Validate and cross-reference Specialization
-        if( this.data.Specialization in IDLookup ) {
-            var spec = IDLookup[this.data.Specialization];
-            if( ! spec instanceof Specialization ) {
-                throw Error("For Skill '"+this.Name+"', Specialization ID '"+this.data.Specialization+"' is not a Specialization");
-            } else {
-                this.specialization = spec;
+        this.specializations = [];
+        if( this.data.Specialization != null ) {
+            let chunks = this.data.Specialization.split(",");
+            for (let i=0; i<chunks.length; ++i) {
+                let text = chunks[i].stripSpaces();
+                if( text in IDLookup ) {
+                    var spec = IDLookup[this.data.Specialization];
+                    if( ! spec instanceof Specialization ) {
+                        throw Error("For Skill '"+this.Name+"', Specialization ID '"+this.data.Specialization+"' is not a Specialization");
+                    } else {
+                        this.specializations.push(spec);
+                    }
+                } else {
+                    console.error(`Not found specialization %{}`)
+                }
             }
         }
     }
@@ -175,7 +188,6 @@ function parseSkills(data) {
         let sgn = skill.GroupName;
         
         skills.push(skill);
-        console.log(`skill: ${skill.Name}`);
 
         // Create skills tree
         if( skill.Attribute != null ) {
@@ -211,6 +223,9 @@ function constructSkillHTML() {
         html += '</div>';
     }
     $('#skills-container').append(html);
+}
+function highlightSpecializations(spec) {
+    
 }
 
 // Classes
@@ -305,10 +320,13 @@ function parseOrigin(data) {
 //numericReq = /^.+\d+\+$/;
 
 // Simple numeric req
-const simpleNumeric = /^ *(?<token>[\w ąćęłńóśźż.]*) (?<value>\d+)\+ *$/;
+const simpleNumeric = /^ *(?<token>[\w ąćęłńóśźż.]*) (?<value>\d+)(?<operator>[\+-]) *$/;
 
-const OPR_IS = Symbol("IS");
-const OPR_GOR = Symbol(">=");
+const Operators = {
+    IS:Symbol("=="),
+    GOR:Symbol(">="),
+    LOR:Symbol("<="),
+};
 
 // For different requirement types, 
 const RequirementType = {
@@ -327,6 +345,12 @@ const RequirementType = {
     // skill object
     UMIEJETNOSC:Symbol("umiejętność"),
 
+    // specialization object
+    SPECJALIZACJA:Symbol("specjalizacja"),
+
+    // perk object
+    SZTUCZKA:Symbol("sztuczka"),
+
     // group name string
     UMIEJETNOSC_Z_GRUPY:Symbol("umiejętność z grupy"),
     
@@ -336,22 +360,22 @@ const RequirementType = {
     // gender enum
     PLEC:Symbol("płeć"),
 
+    // descrtiption string
+    OTHER:Symbol("other"),
+
     // null
     BRAK:Symbol("brak"),
 }
 
 class PerkRequirementAtom {
     constructor(text) {
-        
-        this.required = null;
-        
-        this.parsed = false;
+        this.complete = false;
         
         // Nullable
-
         this.type = RequirementType.BRAK; // LVAL
         this.selector = null;   // LVAL selector
         this.value = null;      // RVAL
+        
 
         // Strip potential :
         text = text.replace(":", " ");
@@ -363,41 +387,27 @@ class PerkRequirementAtom {
         let simplenumeric = simpleNumeric.exec(text);
         if ( simplenumeric !== null ) {
             this.value = simplenumeric.groups.value;
-            this.parsed = this.parseToken(simplenumeric.groups.token.stripSpaces());
+            this.complete = this.parseToken(simplenumeric.groups.token.stripSpaces());
             return;
         } else {
             // Pochodzenie
-            if(text.startsWith(RequirementType.POCHODZENIE.description)) {
-                text = text.replace(RequirementType.POCHODZENIE.description, "").stripSpaces();
-                this.type = RequirementType.POCHODZENIE;
-                for(let i=0; i<origins.length; ++i) {
-                    let origin = origins[i];
-                    if( origin.Name.toLowerCase() == text ) {
-                        this.value = origin;
-                        this.parsed = true;
-                        return;
-                    }
-                }
-                console.error(`Did not find origin ${text}`);
-                return;
-            }
-            if( text == RequirementType.CECHA_STARTOWA.description ) {
-                this.type = RequirementType.CECHA_STARTOWA;
+            if( this.tryParseNamedArray(text, RequirementType.POCHODZENIE, origins) ){
                 return;
             }
 
             // Profesja
-            if( text.startsWith(RequirementType.PROFESJA.description)) {
-                text = text.replace(RequirementType.PROFESJA.description, "").stripSpaces();
-                for( let i=0; i<classes.length; ++i) {
-                    let cls = classes[i];
-                    if( cls.Name.toLowerCase() == text ) {
-                        this.type = RequirementType.PROFESJA;
-                        this.value = cls;
-                        return;
-                    }
-                }
-                console.error(`Did not find class ${text}`);
+            if( this.tryParseNamedArray(text, RequirementType.PROFESJA, classes) ){
+                return;
+            }
+
+            // Specjalizacja
+            if( this.tryParseNamedArray(text, RequirementType.SPECJALIZACJA, specializations) ){
+                return;
+            }
+
+            // Sztuczka
+            // Note: prerequisite perk must be defined up the list!
+            if( this.tryParseNamedArray(text, RequirementType.SZTUCZKA, perks) ){
                 return;
             }
 
@@ -405,32 +415,61 @@ class PerkRequirementAtom {
             if( text.startsWith(RequirementType.PLEC.description) ) {
                 text = text.replace(RequirementType.PLEC.description, "").stripSpaces();
                 switch(text) {
-                    case Gender.KOBIETA:
+                    case Gender.KOBIETA.description.toLowerCase():
                         this.value = Gender.KOBIETA;
                         return;
-                    case Gender.MEZCZYZNA:
+                    case Gender.MEZCZYZNA.description.toLowerCase():
                         this.value = Gender.MEZCZYZNA;
-                        break;
+                        return;
                     default:
-                        console.error("There are only two genders");
+                        console.error(`Unknown gender ${text}`);
                 }
             }
 
             // Brak
             if( text == RequirementType.BRAK.description ) {
-                this.type = 
+                this.type = RequirementType.BRAK;
+                return;
+            }
+
+            // Cecha startowa
+            if( text == RequirementType.CECHA_STARTOWA.description ) {
+                this.type = RequirementType.CECHA_STARTOWA;
+                return;
             }
 
             // Number-less skill 
             // Number-less attribute
-            this.parsed = this.parseToken(text);
-            if( this.parsed ) {
+            this.complete = this.parseToken(text);
+            if( this.complete ) {
                 return;
             }
-
-            console.log(`Non-numeric: ${text}`)
+            
+            // Assuming it has to be other
+            this.type = RequirementType.OTHER;
+            this.value = text;
+            console.log(`Adding perk as other: ${text}`)
         }
 
+    }
+
+    tryParseNamedArray(text, req, arr) {
+        let reqd = req.description;
+        if( text.startsWith(reqd)) {
+            text = text.replace(reqd, "").stripSpaces();
+            this.type = req;
+            for( let i=0; i<arr.length; ++i) {
+                let item = arr[i];
+                if( item.Name.toLowerCase() == text ) {
+                    this.value = item;
+                    this.complete = true;
+                    return true;
+                }
+            }
+            console.error(`Did not find ${reqd} ${text}`);
+            return false;
+        }
+        return false;
     }
 
     parseToken(token) {
@@ -461,7 +500,6 @@ class PerkRequirementAtom {
             !this.parseGroupLogic(token, RequirementType.UMIEJETNOSC_Z_GRUPY) &&
             !this.parseGroupLogic(token, RequirementType.WSZYSTKIE_UMIEJETNOSCI_Z_GRUPY)
         ) {
-            console.log(`Cannot parse token ${token}`);
             return false;
         } else {
             return true;
@@ -554,7 +592,10 @@ class Character {
             this.skills[skill.ID] = 0;
         };
         this.specialization = specializations[0];
-        this.gender = MALE;
+        this.gender = Gender.MEZCZYZNA;
+        this.firstName = "";
+        this.lastName = "";
+        this.age = 0;
     }
 
     randomize() {
@@ -565,9 +606,17 @@ class Character {
         });
 
         // Skills
+        that.specialization = specializations.getRandom();
         Object.keys(this.skills).forEach(function(key){
+            IDLookup[key].specializations
             that.skills[key] = getRandomInt(0, 6);
         });
+
+        that.gender = ( Math.random() >= 0.4 ? Gender.MEZCZYZNA : Gender.KOBIETA );
+        that.firstName = that.gender == Gender.MEZCZYZNA ? maleNames.getRandom() : femaleNames.getRandom();
+        that.lastName = lastNames.getRandom();
+        that.age = 10 + Math.floor( Math.random() * 70 );
+        
     }
 }
 
@@ -576,9 +625,23 @@ function loadChar(char) {
     Object.keys(merged).forEach(function(key){
         $('#'+key).val(merged[key]); 
     });
+    $('#character-first-name').val(char.firstName);
+    $('#character-last-name').val(char.lastName);
+    $('#character-age').val(char.age);
+    $('#specialization-selector').val(char.specialization.Name);
 }
 
 const promises = urls.map(url => fetch(url));
+
+
+const maleNames = [ "Ash", "Blaze", "Crow", "Flint", "Gunner", "Hawk", "Hunter", "Jericho", "Knox", "Raven", "Reaper", "Scout", "Stone", "Talon", "Wolf", "Asher", "Caspian", "Elijah", "Ezekiel", "Jasper", "Kai", "Silas" ];
+const femaleNames = [ "Ember", "Genesis", "Hope", "Iris", "Jade", "Juniper", "Nova", "Phoenix", "Rayne", "Willow", "Zephyr", "Anya", "Freya", "Luna", "Willow" ]; 
+const lastNames = [ "Ashwood", "Blazeheart", "Crowfeather", "Dustrider", "Flintlock", "Gunhawk", "Ironsides", "Jericho", "Knoxblade", "Nightshade", "Phoenix", "Ravenguard", "Reaperstrike", "Shadowhunter", "Steelbreaker", "Stormsong", "Talonheart", "Wastelander", "Whisperwind", "Emberlight", "Genesis", "Hopewell", "Irismoon", "Jadehawk", "Juniperdawn", "Novastar", "Phoenixfire", "Raynecloud", "Willowwhisper", "Zephyrwing" ]
+
+function getRandom() {
+
+}
+
 
 $(document).ready(function() {
     Promise.all(promises).then(responses => {

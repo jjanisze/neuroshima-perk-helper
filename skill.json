@@ -580,7 +580,7 @@
     "Ruleset": "Piraci",
     "Name": "Sterowanie",
     "Description": "Sterowanie to nic innego , jak kierowanie łajbami. Wszystkimi rodzajami jednostek - od Lekkich, po Kolumbryny. Testując tę Umiejętność, omijasz rafy, wykonujesz manewry podczas bitwy morskiej i cumujesz w wyznaczonym miejscu w porcie. W przypadku jednostek Lekkich, zamiast tej Umiejętności możesz wykorzystać Kutry z pakietu Sprzęt. Wszystkie łajby  mają współczynnik Sterowność. Jego wartość dodaje się do Umiejętności Sterowanie Sternika i razem całość odejmuje się od kości podczas testów. Dodanie Sterowania nie powoduje tego, że Sternik otrzymuje Suwak.",
-    "Attribute": null,
+    "Attribute": "ATR_PER",
     "GroupName": "Żegluga",
     "Specialization": "SPEC_TECH, SPEC_RANGER"
   },
@@ -589,7 +589,7 @@
     "Ruleset": "Piraci",
     "Name": "Nawigacja",
     "Description": "Umiejętność używana podczas żeglugi morskiej. Z jej pomocą można wyznaczyć kurs statku, określić jego położenie, to znaczy długość i szerokość geograficzną. Przydaje się również podczas odczytywania map morskich i korzystania z notatek sporządzonych przez innych. Nawigacja pozwala korzystać ze skomplikowanych urządzeń, jak również tych najprostszych, jak busola. Z jej znajomością, można również określać położenie patrząc w nocne niebo.",
-    "Attribute": null,
+    "Attribute": "ATR_PER",
     "GroupName": "Żegluga",
     "Specialization": "SPEC_TECH, SPEC_RANGER"
   },
@@ -598,8 +598,17 @@
     "Ruleset": "Piraci",
     "Name": "Wiedza o morzu",
     "Description": "Mogłeś ukończyć najlepszą szkołę i urzyć się od najznamienitszych teoretyków pływania, ale nic nie zastąpi praktyki. Dopiero gdy żeglujesz, uczysz się o morzu. Znasz się na rodzajach chmur i wiatrach. Rozpoznajesz ryby i w ogóle morskie rośliny i stworzenia. Oczywiście wiesz, czym się różni fokmaszt od grotmasztu i sterburta od tej drugiej burty.",
-    "Attribute": null,
+    "Attribute": "ATR_PER",
     "GroupName": "Żegluga",
     "Specialization": "SPEC_TECH, SPEC_RANGER"
+  },
+  "SKILL_SZTUKA_WALKI": {
+    "ID": "SKILL_SZTUKA_WALKI",
+    "Ruleset": "Bohater 3",
+    "Name": "Sztuka Walki",
+    "Description": "Wybrana sztuka walki",
+    "Attribute": "ATR_ZRE",
+    "GroupName": "Sztuki Walki",
+    "Specialization": null
   }
 }

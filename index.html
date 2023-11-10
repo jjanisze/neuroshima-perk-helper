@@ -8,15 +8,68 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="test">Perki</h1>
-  <div id="perks-container">
-  </div>
-  <div id="attributes-container">
-  </div>
-  <div id="specialization-container">
-    <select name="pets" id="specialization-selector">
-    </select>
-  </div>
-  <div id="skills-container">
+  <div id="body-container">
+    <nav class="navbar">
+      <a href="https://github.com/jjanisze/neuroshimacalc" class="logo">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github logo" style="width:25px; height:25px">
+        <span class="repolink">https://jjanisze.github.io/neuroshimacalc/</span> 
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#">Curriculum</a></li>
+        <li class="nav-item"><a href="#">Forum</a></li>
+        <li class="nav-item"><a href="#">News</a></li>
+        <li class="nav-item"><a href="#">Sign in</a></li>
+      </ul>
+    </nav>
+
+    <div id="search-page">
+      <div id="search-container">
+        <h1 id="test">Szukaj</h1>
+
+        <input type="checkbox" id="search-select-wszystko" name="search-select-wszystko" value="Wszystko" class="nobox">
+        <label for="search-select-wszystko">Wszystko</label><br>
+
+        <input type="checkbox" id="search-select-nic" name="search-select-wszystko" value="Nic" class="nobox">
+        <label for="search-select-nic">Nic</label><br>
+
+        <input type="checkbox" id="search-select-sztuczki" name="search-select-sztuczki" value="Sztuczki">
+        <label for="search-select-sztuczki">Sztuczki i cechy</label><br>
+
+        <input type="checkbox" id="search-select-atrybuty" name="search-select-atrybuty" value="Atrybuty">
+        <label for="search-select-atrybuty">Atrybuty</label><br>
+
+        <input type="checkbox" id="search-select-umiejetnosci" name="search-select-umiejetnosci" value="Umiejętności">
+        <label for="search-select-umiejetnosci">Umiejętności</label><br>
+
+        <input type="checkbox" id="search-select-profesje" name="search-select-profesje" value="Profesje">
+        <label for="search-select-profesje">Profesje</label><br>
+
+        <input type="checkbox" id="search-select-pochodzenia" name="search-select-pochodzenia" value="Pochodzenia">
+        <label for="search-select-pochodzenia">Pochodzenia</label><br>
+
+        <input type="text" id="search-input" name="search-input">
+      </div>
+    </div>
+
+    <div id="character-page">
+      <div id="info-container">
+        <label for="character-first-name">Imię:</label>
+        <input type="text" id="character-first-name" name="character-first-name">
+        <label for="character-last-name">Nazwisko:</label>
+        <input type="text" id="character-last-name" name="character-last-name">
+        <label for="character-age">Wiek:</label>
+        <input type="number" id="character-age" name="character-age">
+        <label for="specialization-selector">Specjalizacja:</label>
+        <select name="pets" id="specialization-selector">
+        </select>
+      </div>
+      <div id="attributes-container">
+      </div>
+      
+      <div id="skills-container">
+    </div>
+
+
   </div>
 </body>
